@@ -1,0 +1,4 @@
+# use the file on per project basis
+tabWidth: 2
+useTabs: false
+printWidth: 80

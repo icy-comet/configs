@@ -1,0 +1,8 @@
+# the file lives in the home dir
+
+[init]
+	defaultBranch = main
+
+[user]
+	name = cryptic-code
+	email = 50461557+cryptic-code@users.noreply.github.com

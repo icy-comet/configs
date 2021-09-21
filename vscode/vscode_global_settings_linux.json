@@ -1,0 +1,7 @@
+{
+  "workbench.colorCustomizations": {
+    "terminal.ansiBlue": "#34948a"
+  },
+  "terminal.integrated.fontFamily": "\"SauceCodePro Nerd Font\"",
+  "terminal.integrated.fontSize": 16
+}
