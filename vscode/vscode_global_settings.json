@@ -9,7 +9,8 @@
   "editor.wordWrap": "on",
   "explorer.confirmDelete": "false",
   "files.exclude": {
-    "node_modules": true
+    "node_modules": true,
+    ".vscode": true
   },
   "files.trimTrailingWhitespace": "true",
   "workbench.iconTheme": "material-icon-theme",
