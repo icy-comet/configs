@@ -7,12 +7,12 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
-  "explorer.confirmDelete": "false",
+  "explorer.confirmDelete": false,
   "files.exclude": {
     "node_modules": true,
     ".vscode": true
   },
-  "files.trimTrailingWhitespace": "true",
+  "files.trimTrailingWhitespace": true,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Community Material Theme Ocean High Contrast",
   "workbench.productIconTheme": "material-product-icons",
