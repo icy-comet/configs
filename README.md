@@ -21,22 +21,17 @@ That includes settings for:
 ### Feature Extensions
 
 1. [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-2. [Color Info](https://marketplace.visualstudio.com/items?itemName=bierner.color-info)
-3. [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
-
-4. [Hugo Language and Syntax Support](https://marketplace.visualstudio.com/items?itemName=budparr.language-hugo-vscode)
-5. [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-
-6. [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
-7. [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-8. [Prettier - Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
-9. [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-10. [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
-
-11. [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
-12. [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml)
-
+1. [Color Info](https://marketplace.visualstudio.com/items?itemName=bierner.color-info)
+1. [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+1. [Hugo Language and Syntax Support](https://marketplace.visualstudio.com/items?itemName=budparr.language-hugo-vscode)
+1. [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+1. [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
+1. [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+1. [Prettier - Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+1. [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+1. [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
+1. [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+1. [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml)
 ### Color Themes
 1. [Material Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 1. [CodeSandbox Theme](https://marketplace.visualstudio.com/items?itemName=ngryman.codesandbox-theme)
