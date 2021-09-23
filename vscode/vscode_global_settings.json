@@ -3,28 +3,30 @@
   "redhat.telemetry.enabled": false,
   "editor.fontSize": 15,
   "editor.fontFamily": "\"Operator Mono Lig\",\"Dank Mono\", monospace",
+  "editor.lineHeight": 1.6,
   "editor.mouseWheelZoom": true,
+  "editor.minimap.enabled": false,
   "editor.bracketPairColorization.enabled": true,
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
+  "emmet.includeLanguages": {
+    "nunjucks": "html"
+  },
   "explorer.confirmDelete": false,
   "files.exclude": {
     "node_modules": true,
-    ".vscode": true
+    ".vscode": true,
+    "venv": true
   },
   "files.trimTrailingWhitespace": true,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Community Material Theme Ocean High Contrast",
   "workbench.productIconTheme": "material-product-icons",
   "window.menuBarVisibility": "compact",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.lineHeight": 1.6
+  }
 }
