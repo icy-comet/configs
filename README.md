@@ -46,11 +46,11 @@ That includes settings for:
 ---
 
 ## Gedit Themes
-- Here's my "Ayu Dark" theme for Gedit: [cryptic-code/ayu-dark-gedit](https://github.com/cryptic-code/ayu-dark-gedit)
+- Here's my "Ayu Dark" theme for Gedit: [cryptic-code/ayu-dark-gedit](https://github.com/cryptic-code/ayu-dark-gedit)
 
 ## Kitty Terminal Themes
 - Here's a GitHub Repo to get themes from: [dexpota/kitty-themes](https://github.com/dexpota/kitty-themes)
-- Here are some of my custom edited themes for increased readability: [cruptic-code/kitty-themes](https://github.com/cryptic-code/kitty-themes)
+- Here are some of my custom edited themes for increased readability: [cryptic-code/kitty-themes](https://github.com/cryptic-code/kitty-themes)
 
 ## Windows Terminal Themes
 - Install themes by adding the theme's object to the `schemes` array in `settings.json` file of Windows Terminal. Refer the docs [here](https://docs.microsoft.com/en-gb/windows/terminal/customize-settings/color-schemes)
