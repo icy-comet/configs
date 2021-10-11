@@ -6,3 +6,6 @@
 [user]
 	name = cryptic-code
 	email = 50461557+cryptic-code@users.noreply.github.com
+
+[color]
+    ui = auto

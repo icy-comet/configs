@@ -1,5 +1,5 @@
 {
-  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
   "redhat.telemetry.enabled": false,
   "editor.fontSize": 15,
   "editor.fontFamily": "\"Operator Mono Lig\",\"Dank Mono\", monospace",
@@ -20,8 +20,7 @@
   },
   "files.trimTrailingWhitespace": true,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Community Material Theme Ocean High Contrast",
-  "workbench.productIconTheme": "material-product-icons",
+  "workbench.colorTheme": "ƒ - Monokai - Operator Mono/Italic",
   "window.menuBarVisibility": "compact",
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
