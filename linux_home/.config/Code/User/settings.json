@@ -1,0 +1,43 @@
+{
+  "telemetry.telemetryLevel": "off",
+  "redhat.telemetry.enabled": false, // needed with Redhat YAML extension
+  "editor.fontSize": 15,
+  "editor.fontFamily": "\"Operator Mono Lig\",\"Dank Mono\", monospace",
+  "editor.lineHeight": 1.6,
+  "editor.mouseWheelZoom": true, // zoom with Ctrl+MouseWheel
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true, // in-built bracket colorization
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "nunjucks": "html"
+  },
+  "explorer.confirmDelete": false,
+  "files.exclude": {
+    "node_modules": true,
+    ".vscode": true,
+    "venv": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Night Owl",
+  "workbench.productIconTheme": "icons-carbon",
+  "window.menuBarVisibility": "compact",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // tailwind config
+  /* "css.validate": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.emmetCompletions": true */
+}

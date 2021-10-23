@@ -1,9 +1,9 @@
 ## Extensions
 
 ### Install
-Run the following command:
-```sh
-awk 'NR>9 && NR<31 && /(`\w|[._-]`)/ {print $NF}' README.md
+Run the python script.
+```
+py install_extensions.py
 ```
 
 ### List
@@ -21,9 +21,9 @@ awk 'NR>9 && NR<31 && /(`\w|[._-]`)/ {print $NF}' README.md
 1. [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml) `tamasfe.even-better-toml`
 ### Color Themes
 1. [CodeSandbox Theme](https://marketplace.visualstudio.com/items?itemName=ngryman.codesandbox-theme) `ngryman.codesandbox-theme`
-2. [Fantastic](https://marketplace.visualstudio.com/items?itemName=sldobri.daily) `sldobri.daily`
-3. [GitHub Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme) `GitHub.github-vscode-theme`
-4. [Palenight Theme](https://marketplace.visualstudio.com/items?itemName=whizkydee.material-palenight-theme) `whizkydee.material-palenight-theme`
+1. [Fantastic](https://marketplace.visualstudio.com/items?itemName=sldobri.daily) `sldobri.daily`
+1. [GitHub Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme) `GitHub.github-vscode-theme`
+1. [Palenight Theme](https://marketplace.visualstudio.com/items?itemName=whizkydee.material-palenight-theme) `whizkydee.material-palenight-theme`
 ### Icon Themes
 1. [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) `PKief.material-icon-theme`
 ### Product Icon Themes

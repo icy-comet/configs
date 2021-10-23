@@ -1,7 +1,0 @@
-{
-  "css.validate": false,
-  "editor.quickSuggestions": {
-  "strings": true
-  },
-  "tailwindCSS.emmetCompletions": true
-}

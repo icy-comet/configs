@@ -13,7 +13,6 @@ That includes settings for:
 - [Windows Terminal](https://github.com/microsoft/terminal)
 - Shell (aliases and such) &
 - [Prettier](https://prettier.io/)
-
 ---
 
 ## Gedit Themes

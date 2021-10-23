@@ -13,3 +13,6 @@
 # Configure default editor for some applications
 # Fedora already has it set to Nano
 # export EDITOR="/usr/bin/nano"
+
+# Deta Binary Path
+# export PATH="$HOME/.deta/bin:$PATH"
