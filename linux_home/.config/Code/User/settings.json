@@ -21,8 +21,8 @@
     "venv": true
   },
   "files.trimTrailingWhitespace": true,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Night Owl",
+  "workbench.iconTheme": "bearded-icons",
+  "workbench.colorTheme": "Bearded Theme Altica",
   "workbench.productIconTheme": "icons-carbon",
   "window.menuBarVisibility": "compact",
   "[javascriptreact]": {
@@ -34,10 +34,19 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // tailwind config
+
+  // Linux-Specific Settings
+  "window.titleBarStyle": "custom", // to not use the OS native window
+  "workbench.colorCustomizations": {
+    "terminal.ansiBlue": "#34948a" // since powerlevel10k rainbow bar becomes unreadable otherwise
+  },
+  "terminal.integrated.fontFamily": "\"MesloLGS NF\"", // powerlevel10k recommended font
+  "terminal.integrated.fontSize": 15,
+
+  // Tailwind-Specific Settings
   /* "css.validate": false,
   "editor.quickSuggestions": {
     "strings": true
   },
-  "tailwindCSS.emmetCompletions": true */
+  "tailwindCSS.emmetCompletions": true, */
 }
