@@ -31,6 +31,7 @@ py install_extensions.py
 ### File Icon Themes
 1. [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) `PKief.material-icon-theme`
 2. [Moxer Icons](https://marketplace.visualstudio.com/items?itemName=equinusocio.moxer-icons) `equinusocio.moxer-icons`
+3. [Bearded Icons](https://marketplace.visualstudio.com/items?itemName=beardedbear.beardedicons) `beardedbear.beardedicons`
 ### Product Icon Themes
 1. [Carbon Product Icons](https://marketplace.visualstudio.com/items?itemName=antfu.icons-carbon) `antfu.icons-carbon`
 
