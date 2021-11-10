@@ -10,3 +10,8 @@ alias catmod="stat -c '%A %a %n'"
 # takes the directory to be fixed after this
 # e.g. `> fixperms /home/aniket/Projects`
 alias fixperms="chmod -R u=rw,og=r,+X"
+
+# Replace `ls` and default ls oh-my-zsh aliases with `exa`
+alias l="exa -la --icons --group-directories-first"
+alias ls="exa --icons --group-directories-first"
+alias la="exa -a --icons --group-directories-first"
