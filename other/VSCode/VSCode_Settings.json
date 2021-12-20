@@ -1,16 +1,15 @@
 {
   "telemetry.telemetryLevel": "off",
   "redhat.telemetry.enabled": false, // needed with Redhat YAML extension
-  "editor.fontSize": 15,
-  "editor.fontFamily": "\"Operator Mono Lig\",\"Dank Mono\", monospace",
+  "editor.fontSize": 16,
+  "editor.fontFamily": "\"Cascadia Code\",\"Operator Mono Lig\",\"Dank Mono\", monospace",
   "editor.lineHeight": 1.6,
   "editor.mouseWheelZoom": true, // zoom with Ctrl+MouseWheel
   "editor.minimap.enabled": false,
   "editor.bracketPairColorization.enabled": true, // in-built bracket colorization
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
-  "editor.formatOnSave": true,
-  "editor.tabSize": 2,
+  "terminal.integrated.fontFamily": "\"CaskaydiaCove NF\"",
   "emmet.includeLanguages": {
     "nunjucks": "html"
   },
@@ -33,12 +32,13 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  }
+
+  // Project-wise changes
+  // "editor.formatOnSave": false,
 
   // Linux-Specific Settings
-  "window.titleBarStyle": "custom", // to not use the OS native window
-  "terminal.integrated.fontFamily": "\"MesloLGS NF\"", // powerlevel10k recommended font
-  "terminal.integrated.fontSize": 15
+  // "window.titleBarStyle": "custom", // to not use the OS native window
 
   // Tailwind-Specific Settings
   /* "css.validate": false,
