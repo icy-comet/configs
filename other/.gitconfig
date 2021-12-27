@@ -1,4 +1,4 @@
-# the file lives in a user's home dir
+# the file lives in user's home dir
 
 [init]
 	defaultBranch = main
@@ -10,7 +10,7 @@
 [color]
 	ui = auto
 
-# only for Windows
-# Convert line endings to CRLF on checkout (commit as LF)
+# Convert line endings to CRLF on checkout (commit as LF) (Only for Windows)
+
 # [core]
-# 	autocrlf = true
+#	autocrlf = true
