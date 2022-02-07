@@ -1,16 +1,16 @@
 # the file lives in user's home dir
 
 [init]
-	defaultBranch = main
+        defaultBranch = main
 
 [user]
-	name = icy-comet
-	email = 50461557+icy-comet@users.noreply.github.com
+        name = icy-comet
+        email = 50461557+icy-comet@users.noreply.github.com
 
 [color]
-	ui = auto
+        ui = auto
 
 # Convert line endings to CRLF on checkout (commit as LF) (Only for Windows)
 
 # [core]
-#	autocrlf = true
+#       autocrlf = true
