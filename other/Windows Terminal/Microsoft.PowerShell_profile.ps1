@@ -1,6 +1,7 @@
-# The file lives in ~/Documents/WindowsPowershell/
-oh-my-posh --init --shell pwsh --config ~/M365Princess.omp.json | Invoke-Expression
-Enable-PoshTransientPrompt
+# File generally goes in C:\Users\<user-name>\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+# Use `echo $PROFILE` to find the exact path on the system
+
+Invoke-Expression (&starship init powershell)
 Function CheckGitStatus { git status }
 Function CheckGitDiff { git diff }
 Function GitClone { git clone $args[0] }

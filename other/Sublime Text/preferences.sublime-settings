@@ -1,9 +1,10 @@
 {
-	"color_scheme": "GitHub Dimmed.sublime-color-scheme",
-	"theme": "GitHub Dimmed.sublime-theme",
-	"font_face": "Cascadia Code",
-	"font_options": ["dlig"],
-	"font_size": 12,
+	"color_scheme": "Packages/ayu/ayu-mirage.sublime-color-scheme",
+	"theme": "ayu-mirage.sublime-theme",
+	"font_face": "MonoLisa-Regular",
+	// !=
+	"font_options": ["dlig","ss01"],
+	"font_size": 13,
 	"line_padding_bottom": 3,
     "line_padding_top": 3,
 	"caret_style": "smooth",
@@ -11,7 +12,4 @@
     "caret_extra_top": 5,
 	"hot_exit": "disabled",
 	"remember_workspace": false,
-	// github theme's suggested settings
-	"highlight_line": true,
-	"margin": 20
 }
