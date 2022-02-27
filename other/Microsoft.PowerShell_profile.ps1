@@ -11,3 +11,4 @@ Set-Alias -Name gcl -Value GitClone
 Set-Alias -Name gdf -Value CheckGitDiff
 Set-Alias -Name gaa -Value GitAddAll
 $env:VIRTUAL_ENV_DISABLE_PROMPT=1
+Set-Alias -Name ls -Value lsd
