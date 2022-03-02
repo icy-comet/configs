@@ -5,9 +5,9 @@
   "telemetry.telemetryLevel": "off",
   "Lua.telemetry.enable": false,
   "redhat.telemetry.enabled": false, // needed with Redhat extensions -- YAML, Ansible
-  "editor.fontSize": 17,
+  "editor.fontSize": 15,
   "editor.fontFamily": "\"MonoLisa NF\",\"Cascadia Code\",\"Operator Mono Lig\",\"Dank Mono\", monospace",
-  "editor.lineHeight": 1.6,
+  "editor.lineHeight": 1.3,
   "editor.bracketPairColorization.enabled": true, // in-built bracket colorization
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
@@ -23,7 +23,7 @@
   },
   "files.trimTrailingWhitespace": true,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Catppuccin",
+  "workbench.colorTheme": "One Dark Pro",
   "workbench.productIconTheme": "icons-carbon",
   "window.menuBarVisibility": "compact",
   "[javascriptreact]": {
@@ -36,10 +36,11 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "python.formatting.provider": "black",
-  "material-icon-theme.folders.color": "#ddb6f2",
+  "material-icon-theme.folders.color": "#e06c75",
   "remote.SSH.remotePlatform": {
     "mainserver": "linux"
-  }
+  },
+  "github.gitAuthentication": false
 
   // ====================
   // Project-wise changes
