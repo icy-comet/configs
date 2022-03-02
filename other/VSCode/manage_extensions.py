@@ -5,36 +5,6 @@ from textwrap import dedent
 from difflib import unified_diff
 from argparse import ArgumentParser, RawTextHelpFormatter
 
-parser = ArgumentParser(
-    description="a simple python script to make managing VS Code extensions easier.",
-    formatter_class=RawTextHelpFormatter,
-)
-
-parser.add_argument(
-    "-d",
-    "--do",
-    choices=["install", "list", "compare"],
-    required=True,
-    metavar="xxxx",
-    help=dedent(
-        """\
-
-                    specify the action to perform
-
-                    install - install all extensions listed in the reamde
-
-                    list - print all extensions present in readme
-                           similar to `code --list-extensions`
-                           useful for comparison
-
-                    compare (default) - print a text-diff of
-                                        extensions present in readme
-                                        compared to those that are installed
-                                        (determined using `code --list-extensions`)\
-                    """
-    ),
-)
-
 NO_README_MSG = "Could not parse extensions."
 
 
@@ -45,7 +15,7 @@ def parse_file() -> list[str]:
         with open(LIST_FILE, "r") as f:
             list_file_content = f.read()
         return sorted(
-            [ext.strip("`") for ext in findall(r"(`[a-zA-Z-._]+`)", list_file_content)]
+            [ext.strip("`") for ext in findall(r"(`[a-zA-Z0-9-._]+`)", list_file_content)]
         )
     else:
         return None
@@ -114,6 +84,36 @@ def comapre_exts():
     else:
         print(NO_README_MSG)
 
+
+parser = ArgumentParser(
+    description="a simple python script to make managing VS Code extensions easier",
+    formatter_class=RawTextHelpFormatter,
+)
+
+parser.add_argument(
+    "-d",
+    "--do",
+    choices=["install", "list", "compare"],
+    required=True,
+    metavar="xxxx",
+    help=dedent(
+        """\
+
+                    specify the action to perform
+
+                    list        print all extensions present in readme
+                                similar to `code --list-extensions`
+                                useful for comparison
+
+                    install     install all extensions listed in the reamde
+
+                    compare     print a text-diff of
+                                extensions present in readme
+                                compared to those that are installed
+                                (determined using `code --list-extensions`)\
+                    """
+    ),
+)
 
 def main():
     action: str = parser.parse_args().do.lower().strip()
