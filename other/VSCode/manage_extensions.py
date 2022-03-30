@@ -15,7 +15,10 @@ def parse_file() -> list[str]:
         with open(LIST_FILE, "r") as f:
             list_file_content = f.read()
         return sorted(
-            [ext.strip("`") for ext in findall(r"(`[a-zA-Z0-9-._]+`)", list_file_content)]
+            [
+                ext.strip("`")
+                for ext in findall(r"(`[a-zA-Z0-9-._]+`)", list_file_content)
+            ]
         )
     else:
         return None
@@ -105,7 +108,8 @@ parser.add_argument(
                                 similar to `code --list-extensions`
                                 useful for comparison
 
-                    install     install all extensions listed in the reamde
+                    install     install all extensions listed in the readme
+                                names should be inside backticks (`)
 
                     compare     print a text-diff of
                                 extensions present in readme
@@ -114,6 +118,7 @@ parser.add_argument(
                     """
     ),
 )
+
 
 def main():
     action: str = parser.parse_args().do.lower().strip()

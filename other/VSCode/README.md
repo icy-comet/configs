@@ -22,7 +22,8 @@ options:
                                   similar to `code --list-extensions`
                                   useful for comparison
 
-                      install     install all extensions listed in the reamde
+                      install     install all extensions listed in the readme
+                                  names should be inside backticks (`)
 
                       compare     print a text-diff of
                                   extensions present in readme
