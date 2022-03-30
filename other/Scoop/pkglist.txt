@@ -1,0 +1,17 @@
+7zip
+adb
+bat
+coreutils
+delta
+exiftool
+fd
+gcc
+grep
+hugo-extended
+less
+lsd
+ripgrep
+scrcpy
+starship
+which
+winfetch
