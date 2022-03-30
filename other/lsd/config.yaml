@@ -1,3 +1,5 @@
+# The file lives in %APPDATA%\lsd\ on Windows
+
 # == Classic ==
 # This is a shorthand to override some of the options to be backwards compatible
 # with `ls`. It affects the "color"->"when", "sorting"->"dir-grouping", "date"
@@ -11,10 +13,10 @@ classic: false
 # Possible values: permission, user, group, size, size_value, date, name, inode
 blocks:
   - permission
-  # Disable on Windows
-  - user
-  # Disable on Windows
-  - group
+  # # Disable on Windows
+  # - user
+  # # Disable on Windows
+  # - group
   - size
   - date
   - name
@@ -32,7 +34,7 @@ color:
   # when specifying <theme-file-name>, lsd will look up theme file
   # XDG Base Directory if relative, e.g. ~/.config/lsd/themes/<theme-file-name>.yaml,
   # The file path if absolute
-  theme: default
+  theme: theme.yaml
 
 # == Date ==
 # This specifies the date format for the date column. The freeform format
@@ -40,7 +42,7 @@ color:
 # When "classic" is set, this is set to "date".
 # Possible values: date, relative, '+<date_format>'
 # `date_format` will be a `strftime` formatted value. e.g. `date: '+%d %b %y %X'` will give you a date like this: 17 Jun 21 20:14:55
-date: relative
+date: 'relative'
 
 # == Dereference ==
 # Whether to dereference symbolic links.
