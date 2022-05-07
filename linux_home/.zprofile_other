@@ -1,9 +1,0 @@
-# Needed if NPM's default global installation dir is changed to bypass permission restrictions
-# export PATH="$HOME/.npm-global/bin:$PATH"
-
-# Deta Binary Path
-# export PATH="$HOME/.deta/bin:$PATH"
-
-# ANSI Color Codes based on `termcap`
-# `termcap` is deprecated in many distributions. see `man termcap`
-# but `less` continues to use it
