@@ -22,13 +22,20 @@ options:
                                   similar to `code --list-extensions`
                                   useful for comparison
 
+                      update-list update the list with names of currently
+                                  installed extensions
+
                       install     install all extensions listed in the readme
                                   names should be inside backticks (`)
 
-                      compare     print a text-diff of
-                                  extensions present in readme
-                                  compared to those that are installed
+                      compare     print a text-diff of extensions
+                                  present in readme compared to
+                                  those that are installed
                                   (determined using `code --list-extensions`)
+                                  extensions part of a meta package
+                                  can be ignored with `diff.ignore` file
+                                  copy the lines from the diff output to this file
+                                  to ignore those names
 ```
 
 ### List
