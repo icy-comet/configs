@@ -14,4 +14,4 @@ Add the new theme's JSON to the `schemes` array in `settings.json` of the Window
   - Use these `Oh My Posh` themes from the official repo:
   - [Bubbles](https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/bubbles.omp.json)
   - [M365Princess](https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/M365Princess.omp.json)
-  - Or use [my custom themes](https://github.com/icy-comet/oh-my-posh-themes)
+  - Or use [my incomplete custom themes](https://github.com/icy-comet/oh-my-posh-themes)
