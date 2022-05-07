@@ -5,12 +5,11 @@
 
 [user]
 	name = Aniket Teredesai
-	email = aniket.teredesai@gmail.com
+	email = <email>
 
 [color]
         ui = auto
 
 # Convert line endings to CRLF on checkout (commit as LF) (Only for Windows)
-
 # [core]
 #       autocrlf = true
