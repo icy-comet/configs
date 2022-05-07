@@ -2,6 +2,7 @@
 adb
 bat
 coreutils
+curl
 delta
 exiftool
 fd
@@ -10,7 +11,9 @@ grep
 hugo-extended
 less
 lsd
+neovim
 ripgrep
+rust
 scrcpy
 starship
 which
