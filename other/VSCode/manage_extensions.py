@@ -78,9 +78,14 @@ def update_list_file():
         write_data = "### List\n\n"
 
         if installed_extenions:
+            ignore_count = 0
             for i, ext in enumerate(installed_extenions):
                 if not ext in ignored_extensions:
-                    write_data += f"{i+1}. {Extension(ext).construct_entry()}\n"
+                    write_data += (
+                        f"{i+1-ignore_count}. {Extension(ext).construct_entry()}\n"
+                    )
+                else:
+                    ignore_count += 1
 
         with open(LIST_FILE, "r+") as f:
             file_contents = f.read()
