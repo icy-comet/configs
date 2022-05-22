@@ -1,0 +1,11 @@
+[Unit]
+Description=Polkit Authentication Agent
+Documentation=man:lxpolkit(1)
+BindsTo=sway-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/lxpolkit
+
+[Install]
+WantedBy=sway-session.target

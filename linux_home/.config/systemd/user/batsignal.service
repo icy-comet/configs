@@ -1,0 +1,13 @@
+[Unit]
+Description=Battery monitor daemon
+Documentation=man:batsignal(1)
+BindsTo=sway-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/batsignal -w 30 -c 20 -d 10 -f 98 -W "Battery level at 30%" -C "Battery Level at 20%" -F "Battery Level at 98%" -I "battery-symbolic"
+Restart=on-failure
+RestartSec=1
+
+[Install]
+WantedBy=sway-session.target

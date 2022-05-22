@@ -1,0 +1,27 @@
+[global]
+# offset format - horizontal x vertical
+offset = "4x0"
+# origin = "bottom-right"
+width = "(0, 650)"
+height = "400"
+line_height = "3"
+
+icon_path = "/usr/share/icons/Papirus-Dark/symbolic/devices/:/usr/share/icons/Papirus-Dark/symbolic/status/:/usr/share/icons/Papirus-Dark/24x24/status/:/usr/share/icons/Papirus-Dark/24x24/devices/:/usr/share/icons/Papirus-Dark/24x24/actions/"
+
+font = "Monospace 14"
+
+frame_color = "#96CDFB"
+separator_color= frame
+
+[urgency_low]
+background = "#1E1E2E"
+foreground = "#D9E0EE"
+
+[urgency_normal]
+background = "#1E1E2E"
+foreground = "#D9E0EE"
+
+[urgency_critical]
+background = "#1E1E2E"
+foreground = "#D9E0EE"
+frame_color = "#F8BD96"

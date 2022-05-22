@@ -1,0 +1,15 @@
+[Unit]
+Description=A lightweight overlay volume/backlight/progress/anything bar for Wayland
+Documentation=man:wob(1)
+BindsTo=sway-session.target
+ConditionEnvironment=WAYLAND_DISPLAY
+ 
+[Service]
+StandardInput=socket
+# Catppuccin
+# ExecStart=/usr/bin/wob --border-color "#c9cbffff" --background-color "#1e1e2eff" --bar-color "#c9cbffff"
+# Tokyo Night
+ExecStart=/usr/bin/wob --border-color "#7dcfffff" --background-color "#24283bff" --bar-color "#7dcfffff"
+
+[Install]
+WantedBy=sway-session.target
