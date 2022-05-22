@@ -42,7 +42,7 @@ def parse_diff_ignore() -> list[str]:
     global DIFF_IGNORE_FILE
 
     if DIFF_IGNORE_FILE.exists():
-        with open(DIFF_IGNORE_FILE, "r") as f:
+        with open(DIFF_IGNORE_FILE, "r", encoding="utf-8", errors="surrogateescape") as f:
             ignore_lines = f.readlines()
 
         return [line.strip() for line in ignore_lines]
@@ -54,7 +54,7 @@ def parse_list_file() -> list[str]:
     global LIST_FILE
 
     if LIST_FILE.exists():
-        with open(LIST_FILE, "r") as f:
+        with open(LIST_FILE, "r", encoding="utf-8", errors="surrogateescape") as f:
             list_file_content = f.read()
         return sorted(
             [
@@ -87,7 +87,7 @@ def update_list_file():
                 else:
                     ignore_count += 1
 
-        with open(LIST_FILE, "r+") as f:
+        with open(LIST_FILE, "r+", encoding="utf-8", errors="surrogateescape") as f:
             file_contents = f.read()
 
             list_start = file_contents.find("### List")
@@ -210,7 +210,7 @@ parser.add_argument(
                                 those that are installed
                                 (determined using `code --list-extensions`)
                                 extensions part of a meta package
-                                can be ignored with `diff.ignore` file
+                                can be ignored with 'diff.ignore' file
                                 copy the lines from the diff output to this file
                                 to ignore those names\
                     """

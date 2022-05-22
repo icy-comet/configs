@@ -33,7 +33,7 @@ options:
                                   those that are installed
                                   (determined using `code --list-extensions`)
                                   extensions part of a meta package
-                                  can be ignored with `diff.ignore` file
+                                  can be ignored with 'diff.ignore' file
                                   copy the lines from the diff output to this file
                                   to ignore those names
 ```
