@@ -8,7 +8,12 @@ export EDITOR="nvim"
 [[ ":$PATH:" =~ ":$HOME/bin:" ]] || export PATH="$HOME/bin:$PATH"
 
 # Needed if NPM's default global installation dir is changed to bypass permission restrictions
-# export PATH="$HOME/.npm-global/bin:$PATH"
+export PATH="$HOME/.npm-global/bin:$PATH"
 
 # Deta Binary Path
-# export PATH="$HOME/.deta/bin:$PATH"
+export PATH="$HOME/.deta/bin:$PATH"
+
+# Rust packages
+export PATH="$HOME/.cargo/bin:$PATH"
+
+export MPD_HOST=$HOME/.config/mpd/socket
