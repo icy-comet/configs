@@ -32,11 +32,6 @@ if [ -f ~/.commonrc.sh ]; then
     . ~/.commonrc.sh
 fi
 
-if [ -f ~/aliases.sh ]; then
-    . ~/aliases.sh
-fi
-
-
 # ==========================================
 # Ensure Proper Keybindings Across Devices
 # Taken from Arch Wiki's ZSH Page

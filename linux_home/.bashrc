@@ -28,7 +28,3 @@ fi
 if [ -f ~/common_rc.sh ]; then
     . ~/common_rc.sh
 fi
-
-if [ -f ~/aliases.sh ]; then
-    . ~/aliases.sh
-fi

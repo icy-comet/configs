@@ -18,3 +18,7 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 # eval "$(keychain -q --eval --noask --agents ssh id_ed25519)"
 
 eval "$(starship init zsh)"
+
+if [ -f ~/.aliases.sh ]; then
+    . ~/.aliases.sh
+fi
