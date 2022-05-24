@@ -3,6 +3,7 @@
   // Windows/Linux Common Settings
   // =============================
   "window.titleBarStyle": "custom", // to not use the OS native window
+  "window.zoomLevel": 1, // HiDpi screen
   "telemetry.telemetryLevel": "off",
   "Lua.telemetry.enable": false,
   "redhat.telemetry.enabled": false, // needed with Redhat extensions -- YAML, Ansible
@@ -20,7 +21,7 @@
   "files.trimTrailingWhitespace": true,
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.folders.theme": "classic",
-  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.colorTheme": "Tokyo Night",
   "workbench.productIconTheme": "icons-carbon",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
