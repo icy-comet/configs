@@ -1,0 +1,5 @@
+# case insensitive autocompletion for bash
+$include /etc/inputrc
+set completion-ignore-case On
+
+set bell-style none

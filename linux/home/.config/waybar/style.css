@@ -1,0 +1,130 @@
+@import "catppuccin-mocha.css";
+
+/* Reset */
+* {
+  border: none;
+  padding: 0;
+  margin: 0;
+  min-height: 0;
+  font-family: "MonoLisa Nerd Font", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: @text;
+}
+
+window#waybar {
+  background: rgba(0,0,0,0);
+}
+
+#custom-osIcon,
+#workspaces,
+#battery,
+#pulseaudio,
+#network,
+#clock,
+#bluetooth,
+#backlight {
+  background: @base;
+}
+
+#backlight,
+#battery,
+#pulseaudio,
+#network,
+#clock,
+#bluetooth {
+  padding: 0 8px;
+}
+
+#custom-osIcon {
+  color: @blue;
+  min-width: 35px;
+  margin-right: 8px;
+  padding-right: 2px;
+}
+
+/* ========================================================== */
+/* █▀█ █▀█ █░█ █▄░█ █▀▄ █▀▀ █▀▄   █▀▀ █▀█ █▀█ █▄░█ █▀▀ █▀█ █▀ */
+/* █▀▄ █▄█ █▄█ █░▀█ █▄▀ ██▄ █▄▀   █▄▄ █▄█ █▀▄ █░▀█ ██▄ █▀▄ ▄█ */
+/* ========================================================== */
+#custom-osIcon,
+#workspaces,
+#window,
+#clock {
+  border-radius: 4px;
+}
+
+#backlight {
+  border-radius: 4px 0 0 4px;
+}
+
+#network {
+  border-radius: 0 4px 4px 0;
+}
+
+/* ================================================================== */
+/* █░█░█ █▀█ █▀█ █▄▀ █▀ █▀█ ▄▀█ █▀▀ █▀▀ █▀   ▀█▀ █░█░█ █▀▀ ▄▀█ █▄▀ █▀ */
+/* ▀▄▀▄▀ █▄█ █▀▄ █░█ ▄█ █▀▀ █▀█ █▄▄ ██▄ ▄█   ░█░ ▀▄▀▄▀ ██▄ █▀█ █░█ ▄█ */
+/* ==---============================================================= */
+#workspaces {
+  padding: 3px 4px;
+}
+
+#workspaces button {
+  padding: 2px 1px;
+  margin: 0px 1px;
+}
+
+#workspaces button label {
+  color: @subtext1;
+}
+
+#workspaces button.active label {
+  color: @yellow;
+}
+
+#workspaces button:hover {
+  background: @base;
+  box-shadow: inherit;
+}
+
+#workspaces button:hover label {
+  color: @peach;
+}
+
+#workspaces button.urgent label {
+  color: @red;
+}
+
+
+/* ================================================== */
+/* █▀▀ █▀█ █░░ █▀█ █▀█   █▀ █▀▀ ▀█▀ ▀█▀ █ █▄░█ █▀▀ █▀ */
+/* █▄▄ █▄█ █▄▄ █▄█ █▀▄   ▄█ ██▄ ░█░ ░█░ █ █░▀█ █▄█ ▄█ */
+/* ================================================== */
+#clock {
+  color: @lavender;
+}
+
+#bluetooth {
+  color: @teal;
+}
+
+#backlight {
+  color: @yellow;
+}
+
+#battery {
+  color: @sky;
+}
+
+#battery.critical {
+  color: @red;
+}
+
+#pulseaudio {
+  color: @flamingo;
+}
+
+#network {
+  color: @mauve;
+}

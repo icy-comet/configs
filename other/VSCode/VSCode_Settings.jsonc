@@ -1,0 +1,52 @@
+{
+  // ==============================
+  // Windows/Linux Common Settings
+  // =============================
+  "window.titleBarStyle": "custom",
+  "telemetry.telemetryLevel": "off",
+  "gitlens.telemetry.enabled": false,
+  "redhat.telemetry.enabled": false, // needed with Redhat extensions -- YAML, Ansible
+  "editor.fontSize": 16,
+  "editor.fontFamily": "\"MonoLisa Nerd Font\", monospace", // in-built bracket colorization
+  "editor.fontLigatures": "call,liga,cv02,cv05,cv09,cv14,ss04,cv16,cv31,cv25,cv26,cv32,cv28,ss10,zero,onum",
+  "editor.wordWrap": "on",
+  "terminal.integrated.fontFamily": "\"MonoLisa Nerd Font\"",
+  "emmet.includeLanguages": {
+    "nunjucks": "html"
+  },
+  "explorer.confirmDelete": true,
+  "files.trimTrailingWhitespace": true,
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.productIconTheme": "icons-carbon",
+  "python.formatting.provider": "black",
+  "github.gitAuthentication": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.accessibilitySupport": "off",
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "material-icon-theme.folders.color": "#90a4ae",
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.folders.theme": "classic",
+  "code-runner.enableAppInsights": false,
+  "workbench.iconTheme": "catppuccin-mocha",
+  "oneDarkPro.italic": true,
+  "oneDarkPro.bold": true
+}

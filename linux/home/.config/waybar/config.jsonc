@@ -1,0 +1,76 @@
+{
+  "layer": "top",
+  "height": 28,
+  "margin-top": 3,
+  "margin-right": 8,
+  "margin-left": 8,
+  "modules-left": ["custom/osIcon", "wlr/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "backlight", "battery", "pulseaudio", "bluetooth", "network"],
+  "custom/osIcon": {
+    "format": "",
+    "tooltip": false
+  },
+  "wlr/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "default": "󰊠",
+      "active": "󰮯"
+    },
+    "persistent_workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    }
+  },
+  "tray": {
+     "icon-size": 21,
+     "spacing": 10,
+     "show-passive-items": true
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟",
+    "format-icons": {
+      "headset": "󰦢",
+      "speaker": "󰓃",
+      "hdmi": "󰽟"
+    },
+    "scroll-step": 3,
+    "on-click": "pavucontrol",
+    "ignored-sinks": ["Easy Effects Sink"]
+  },
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": " {:%H:%M}",
+    "format-alt": " {:%A, %B %d, %Y}"
+  },
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "on-scroll-up": "brightnessctl s +5%",
+    "on-scroll-down": "brightnessctl s 5%-"
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 20
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "interval": 30
+  },
+  "bluetooth": {},
+  "network": {
+    "format-wifi": "{icon} {signalStrength}%",
+    "format-linked": "{ifname} (No IP)  ",
+    "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-disconnected": "󰤮 Disconnected",
+    "format-alt": "{ifname}: {ipaddr}",
+    "tooltip-format": "{essid} {signalStrength}%"
+  }
+}

@@ -1,0 +1,36 @@
+[global]
+width = "(0, 650)"
+height = "400"
+layer = "overlay"
+
+follow = "mouse"
+
+sort = yes
+notification_limit = 8
+indicate_hidden = yes
+alignment = center
+word_wrap = yes
+
+separator_height = 1
+enable_recursive_icon_lookup = yes
+icon_theme = "Papirus-Dark"
+
+font = "MonoLisa Nerd Font 11"
+
+frame_width = 1
+
+frame_color = "#89B4FA"
+separator_color= frame
+
+[urgency_low]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+
+[urgency_normal]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+
+[urgency_critical]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+frame_color = "#FAB387"

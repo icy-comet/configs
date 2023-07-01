@@ -1,0 +1,1 @@
+the custom theme has been created to somewhat match the colors of the exa command in linux

@@ -1,0 +1,19 @@
+# the file lives in user's home dir
+
+[init]
+        defaultBranch = main
+
+[user]
+	name = Aniket Teredesai
+	email = aniket.teredesai@gmail.com
+
+[color]
+        ui = auto
+
+# Convert line endings to CRLF on checkout (commit as LF) (Only for Windows)
+# [core]
+#       autocrlf = true
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/usr/bin/gh auth git-credential
