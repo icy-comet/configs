@@ -8,7 +8,7 @@ These are some of the configurations I use on my machines regularly. My configs 
 ### Repo Structure
 ```bash
 # lsd/exa
-lsd -a --tree -I .git
+exa -a --tree -I .git
 ```
 
 ```tree
@@ -50,7 +50,7 @@ lsd -a --tree -I .git
 │  │  │  │  ├── hyprland.conf
 │  │  │  │  ├── hyprpaper.conf
 │  │  │  │  ├── mocha.conf
-│  │  │  │  ├── powermenu.sh
+│  │  │  │  ├── progressBar.sh
 │  │  │  │  └── README.md
 │  │  │  ├── kitty
 │  │  │  │  ├── catppuccin-mocha.conf
