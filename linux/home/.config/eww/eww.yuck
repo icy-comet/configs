@@ -7,25 +7,26 @@
               :height "100%"
               :width "100%"
               :anchor "bottom left")
-  (systemctl))
+  (powerbox))
 
-(defwidget systemctl []
+(defwidget powerbox []
   (box
-    :class "box"
+    :class "powerBox"
     :orientation "v"
     :space-evenly false
     :halign "center"
     :valign "center"
     :spacing 20
-    (button :class "btn-power" :onclick "systemctl poweroff" "󰐥")
-    (button :class "btn-reboot" :onclick "systemctl reboot" "")
-    (button :class "btn-logout" :onclick "notify-send cool" "󰍃")
-    (button :class "btn-sleep" :onclick "systemctl suspend" "󰤄")
+    (button :class "powerbtn-power" :onclick "systemctl poweroff" "󰐥")
+    (button :class "powerbtn-reboot" :onclick "systemctl reboot" "")
+    (button :class "powerbtn-logout" :onclick "notify-send cool" "󰍃")
+    (button :class "powerbtn-sleep" :onclick "systemctl suspend" "󰤄")
     )
 )
 
 (defvar barIcon "󰃠")
 (defvar barPercent 70)
+(defvar barPresses 0)
 
 (defwindow overlaybar
   :monitor 0
@@ -33,12 +34,12 @@
   :focusable false
   :exclusive false
   :geometry (geometry :width "170px" :height "10px" :anchor "center")
-  (overlayprogress :icon barIcon :percent barPercent)
+  (percentBox :icon barIcon :percent barPercent)
 )
 
-(defwidget overlayprogress [icon percent]
+(defwidget percentBox [icon percent]
   (box
-    :class "overlay-box"
+    :class "percentBox"
     :orientation "h"
     :halign "center"
     :valign "center"
