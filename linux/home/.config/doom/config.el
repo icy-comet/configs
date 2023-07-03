@@ -11,5 +11,8 @@
 (setq indent-tabs-mode nil)
 (setq tab-width 4)
 (setq require-final-newline nil)
+(setq mode-require-final-newline nil)
+(set-frame-parameter nil 'alpha-background 70)
+(add-to-list 'default-frame-alist '(alpha-background . 70))
 
 (setq org-directory "~/org/")
