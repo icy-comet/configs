@@ -3,10 +3,10 @@
 entity="$1"
 verb="$2"
 
-killScript() {
+function updateWindow() {
     sleep 1
     barPresses=$(eww get barPresses)
-    barPresses=$((barPresses-1))
+    barPresses=$((barPresses - 1))
     eww update barPresses="$barPresses"
     if [ $barPresses -lt 1 ]; then
         eww close overlaybar
@@ -29,7 +29,7 @@ if [ $entity == "volume" ]; then
     else
         exit 1
     fi
-    barPercent=$(pactl get-sink-volume @DEFAULT_SINK@ | head -n 1| awk '{print substr($5, 1, length($5)-1)}')
+    barPercent=$(pactl get-sink-volume @DEFAULT_SINK@ | head -n 1 | awk '{print substr($5, 1, length($5)-1)}')
 elif [ $entity == "brightness" ]; then
     if [ $verb == "up" ]; then
         brightnessctl set 5%+
@@ -46,6 +46,6 @@ fi
 
 eww update barIcon="$barIcon" barPercent="$barPercent" && eww open overlaybar
 barPresses=$(eww get barPresses)
-barPresses=$((barPresses+1))
+barPresses=$((barPresses + 1))
 eww update barPresses="$barPresses"
-killScript
+updateWindow
