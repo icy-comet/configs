@@ -35,6 +35,7 @@
     "format": "{icon} {volume}%",
     "format-muted": "󰝟",
     "format-icons": {
+      "headphone": "󰋋",
       "headset": "󰦢",
       "speaker": "󰓃",
       "hdmi": "󰽟"
@@ -64,7 +65,16 @@
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "interval": 30
   },
-  "bluetooth": {},
+  "bluetooth": {
+    "format-on": "󰂯 On",
+    "format-off": "󰂯 Off",
+    "format-disabled": "󰂯 Disabled",
+    "format-connected": "󰂯 Connected",
+    "tooltip-format": "Bluetooth",
+    "tooltip-format-connected": "Connected — {device_alias}",
+    "tooltip-format-connected-battery": "Connected — {device_alias} — 󰥈 {device_battery_percentage}%",
+    "on-click": "blueman-manager"
+  },
   "network": {
     "format-wifi": "{icon} {signalStrength}%",
     "format-linked": "{ifname} (No IP)  ",
