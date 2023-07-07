@@ -10,11 +10,20 @@ export EDITOR="nvim"
 # Deta Binary Path
 export PATH="$HOME/.deta/bin:$PATH"
 
-# Rust packages
+# Rust bin
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # Doom CLI
 export PATH="$HOME/.config/emacs/bin:$PATH"
+
+# Eww bin
+export PATH="$HOME/Git/eww/target/release:$PATH"
+
+#Golang bin
+export PATH="$HOME/go/bin:$PATH"
+
+# pipx bin
+export PATH="$HOME/.local/bin/:$PATH"
 
 export MPD_HOST="$HOME/.config/mpd/socket"
 
