@@ -16,3 +16,8 @@
 (add-to-list 'default-frame-alist '(alpha-background . 70))
 
 (setq org-directory "~/org/")
+
+(after! treemacs
+  (treemacs-project-follow-mode t)
+  (treemacs-indent-guide-mode t)
+  (treemacs-follow-mode t))
