@@ -26,7 +26,8 @@ class Extension:
         try:
             rawHtml: str = urllib.request.urlopen(self.url).read().decode("utf8")
             # tried using python's built-in html.parser
-            name_start_idx = rawHtml.find('<span class="ux-item-name">') + 27
+            name_span_txt = "<span class=\"ux-item-name\">"
+            name_start_idx = rawHtml.find(name_span_txt) + len(name_span_txt)
             name_end_idx = name_start_idx + rawHtml[name_start_idx:].find("</span>") - 1
             self.name = rawHtml[name_start_idx : name_end_idx + 1]
         except:
