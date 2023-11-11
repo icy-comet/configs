@@ -21,3 +21,7 @@ Function ln {
   Write-Error -Message "Insufficient/Invalid arguments provided." -Category "InvalidArgument"
 
 }
+
+Function ll {
+  lsd -l -a
+}
