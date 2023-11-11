@@ -20,6 +20,7 @@ DIFF_IGNORE_FILE = script_loc.parent / "diff.ignore"
 class Extension:
     def __init__(self, id: str) -> None:
         self.id = id
+        self.name = ""
         self.url = "https://marketplace.visualstudio.com/items?itemName=" + id
 
     def fetch_name(self):
@@ -30,6 +31,7 @@ class Extension:
             name_start_idx = rawHtml.find(name_span_txt) + len(name_span_txt)
             name_end_idx = name_start_idx + rawHtml[name_start_idx:].find("</span>") - 1
             self.name = rawHtml[name_start_idx : name_end_idx + 1]
+            print(self.name)
         except:
             return None
 
@@ -165,6 +167,8 @@ def comapre_exts():
             tofile="extensions reported by code binary",
         )
         for line in diff:
+            line = line.strip()
+
             if ignore_lines and (line in ignore_lines):
                 continue
 
@@ -177,7 +181,7 @@ def comapre_exts():
                 # because of diff ignore
                 continue
             else:
-                print(line)
+                continue
 
 
 parser = ArgumentParser(
