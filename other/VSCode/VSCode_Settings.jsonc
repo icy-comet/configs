@@ -6,7 +6,7 @@
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
   "redhat.telemetry.enabled": false, // needed with Redhat extensions -- YAML, Ansible
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "editor.fontFamily": "\"MonoLisa Nerd Font\", monospace", // in-built bracket colorization
   "editor.fontLigatures": "call,liga,cv02,cv05,cv09,cv14,ss04,cv16,cv31,cv25,cv26,cv32,cv28,ss10,zero,onum",
   "editor.wordWrap": "on",
@@ -16,15 +16,10 @@
   },
   "explorer.confirmDelete": true,
   "files.trimTrailingWhitespace": true,
-  "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.productIconTheme": "icons-carbon",
-  "python.formatting.provider": "black",
   "github.gitAuthentication": false,
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -42,11 +37,23 @@
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "material-icon-theme.folders.color": "#90a4ae",
-  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.folders.color": "#d4be98",
+  "material-icon-theme.activeIconPack": "none",
   "material-icon-theme.folders.theme": "classic",
-  "code-runner.enableAppInsights": false,
-  "workbench.iconTheme": "catppuccin-mocha",
-  "oneDarkPro.italic": true,
-  "oneDarkPro.bold": true
+  "workbench.iconTheme": "material-icon-theme",
+  "go.toolsManagement.autoUpdate": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.scale": 2,
+  "editor.minimap.autohide": true,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.commandCenter": true,
+  "liveshare.guestApprovalRequired": true,
+  "window.menuBarVisibility": "compact",
+  "material-icon-theme.saturation": 0.95,
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "gruvboxMaterial.darkContrast": "hard",
+  "svelte.enable-ts-plugin": true,
+  "window.zoomLevel": 0
 }
