@@ -10,8 +10,8 @@ export EDITOR="nvim"
 # Deta Binary Path
 export PATH="$PATH:$HOME/.deta/bin"
 
-# Rust bin
-export PATH="$HOME/.cargo/bin:$PATH"
+# source rustup env file
+if [ -r "$HOME/.cargo/env" ]; then . "$HOME/.cargo/env"; fi
 
 # Doom CLI
 export PATH="$PATH:$HOME/.config/emacs/bin"
