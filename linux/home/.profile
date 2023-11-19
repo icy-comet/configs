@@ -5,25 +5,25 @@
 export EDITOR="nvim"
 
 # doesn't work with fish
-[[ ":$PATH:" =~ ":$HOME/bin:" ]] || export PATH="$HOME/bin:$PATH"
+[[ ":$PATH:" =~ ":$HOME/bin:" ]] || export PATH="$PATH:$HOME/bin"
 
 # Deta Binary Path
-export PATH="$HOME/.deta/bin:$PATH"
+export PATH="$PATH:$HOME/.deta/bin"
 
 # Rust bin
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # Doom CLI
-export PATH="$HOME/.config/emacs/bin:$PATH"
+export PATH="$PATH:$HOME/.config/emacs/bin"
 
 # Eww bin
-export PATH="$HOME/Git/eww/target/release:$PATH"
+export PATH="$PATH:$HOME/Git/eww/target/release"
 
 #Golang bin
-export PATH="$HOME/go/bin:$PATH"
+export PATH="$PATH:$HOME/go/bin"
 
 # pipx bin
-export PATH="$HOME/.local/bin/:$PATH"
+export PATH="$PATH:$HOME/.local/bin/"
 
 export MPD_HOST="$HOME/.config/mpd/socket"
 
