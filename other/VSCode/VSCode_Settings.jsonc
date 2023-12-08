@@ -1,21 +1,26 @@
 {
   // ==============================
   // Windows/Linux Common Settings
-  // =============================
+  // ==============================
+
+  // required for not crashing on Wayland, and better aesthetics in general
   "window.titleBarStyle": "custom",
   "telemetry.telemetryLevel": "off",
   "gitlens.telemetry.enabled": false,
-  "redhat.telemetry.enabled": false, // needed with Redhat extensions -- YAML, Ansible
+  // needed with Redhat extensions -- YAML, Ansible
+  "redhat.telemetry.enabled": false,
   "editor.fontSize": 15,
-  "editor.fontFamily": "\"MonoLisa Nerd Font\", monospace", // in-built bracket colorization
-  "editor.fontLigatures": "call,liga,cv02,cv05,cv09,cv14,ss04,cv16,cv31,cv25,cv26,cv32,cv28,ss10,zero,onum",
-  "editor.wordWrap": "on",
+  // in-built bracket colorization
+  "editor.fontFamily": "\"MonoLisa Nerd Font\", monospace",
   "terminal.integrated.fontFamily": "\"MonoLisa Nerd Font\"",
+  "editor.fontLigatures": "dlig,liga,cv02,cv05,cv09,cv14,cv16,cv25,cv26,cv28,cv31,cv32,ss01,ss02,ss03,ss04,ss05,ss06,ss07,ss08,ss10,zero,onum,calt,call",
+  "editor.wordWrap": "on",
   "emmet.includeLanguages": {
     "nunjucks": "html"
   },
   "explorer.confirmDelete": true,
   "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
   "workbench.productIconTheme": "icons-carbon",
   "github.gitAuthentication": false,
   "[html]": {
@@ -37,7 +42,7 @@
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "material-icon-theme.folders.color": "#d4be98",
+  "material-icon-theme.folders.color": "#a5adcb",
   "material-icon-theme.activeIconPack": "none",
   "material-icon-theme.folders.theme": "classic",
   "workbench.iconTheme": "material-icon-theme",
@@ -52,8 +57,10 @@
   "liveshare.guestApprovalRequired": true,
   "window.menuBarVisibility": "compact",
   "material-icon-theme.saturation": 0.95,
-  "workbench.colorTheme": "Gruvbox Material Dark",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "gruvboxMaterial.darkContrast": "hard",
   "svelte.enable-ts-plugin": true,
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  "window.density.editorTabHeight": "compact",
+  "update.showReleaseNotes": false
 }
