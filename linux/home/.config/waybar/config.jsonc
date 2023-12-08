@@ -4,21 +4,21 @@
   "margin-top": 3,
   "margin-right": 8,
   "margin-left": 8,
-  "modules-left": ["custom/osIcon", "wlr/workspaces"],
+  "modules-left": ["custom/osIcon", "hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["tray", "backlight", "battery", "pulseaudio", "bluetooth", "network"],
+  "modules-right": ["tray", "backlight", "idle_inhibitor", "battery", "pulseaudio", "bluetooth", "network"],
   "custom/osIcon": {
     "format": "",
     "tooltip": false
   },
-  "wlr/workspaces": {
+  "hyprland/workspaces": {
     "format": "{icon}",
     "on-click": "activate",
     "format-icons": {
-      "default": "󰊠",
+     "default": "󰊠",
       "active": "󰮯"
     },
-    "persistent_workspaces": {
+    "persistent-workspaces": {
       "1": [],
       "2": [],
       "3": [],
@@ -30,6 +30,13 @@
      "icon-size": 21,
      "spacing": 10,
      "show-passive-items": true
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "󰅶 caffeinated",
+      "deactivated": "󰾪 decaffed"
+    }
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
@@ -76,11 +83,11 @@
     "on-click": "blueman-manager"
   },
   "network": {
+    "on-click": "networkmanager_dmenu",
     "format-wifi": "{icon} {signalStrength}%",
     "format-linked": "{ifname} (No IP)  ",
     "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
     "format-disconnected": "󰤮 Disconnected",
-    "format-alt": "{ifname}: {ipaddr}",
     "tooltip-format": "{essid} {signalStrength}%"
   }
 }

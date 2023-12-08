@@ -23,7 +23,8 @@ window#waybar {
 #network,
 #clock,
 #bluetooth,
-#backlight {
+#backlight,
+#idle_inhibitor {
   background: @base;
 }
 
@@ -32,12 +33,13 @@ window#waybar {
 #pulseaudio,
 #network,
 #clock,
-#bluetooth {
+#bluetooth,
+#idle_inhibitor {
   padding: 0 8px;
 }
 
 #custom-osIcon {
-  color: @blue;
+  color: @teal;
   min-width: 35px;
   margin-right: 8px;
   padding-right: 2px;
@@ -76,7 +78,7 @@ window#waybar {
 }
 
 #workspaces button label {
-  color: @subtext1;
+  color: @overlay2;
 }
 
 #workspaces button.active label {
@@ -102,11 +104,11 @@ window#waybar {
 /* █▄▄ █▄█ █▄▄ █▄█ █▀▄   ▄█ ██▄ ░█░ ░█░ █ █░▀█ █▄█ ▄█ */
 /* ================================================== */
 #clock {
-  color: @lavender;
+  color: @pink;
 }
 
 #bluetooth {
-  color: @teal;
+  color: @peach;
 }
 
 #backlight {
@@ -122,9 +124,17 @@ window#waybar {
 }
 
 #pulseaudio {
-  color: @flamingo;
+  color: @green;
 }
 
 #network {
   color: @mauve;
+}
+
+#idle_inhibitor {
+  color: @overlay2;
+}
+
+#idle_inhibitor.activated {
+  color: @maroon;
 }
