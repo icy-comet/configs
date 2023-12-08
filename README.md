@@ -15,9 +15,12 @@ exa -a --tree -I .git
 .
 ├── .editorconfig
 ├── .gitignore
+├── abcd.txt
 ├── LICENSE
 ├── linux
 │  ├── etc
+│  │  ├── sddm.conf.d
+│  │  │  └── 10-custom.conf
 │  │  └── X11
 │  │     └── xorg.conf.d
 │  │        ├── 30-touchpad.conf
@@ -46,11 +49,13 @@ exa -a --tree -I .git
 │  │  │  ├── eww
 │  │  │  │  ├── eww.scss
 │  │  │  │  └── eww.yuck
+│  │  │  ├── gtk-3.0
+│  │  │  │  ├── bookmarks
+│  │  │  │  └── settings.ini
 │  │  │  ├── hypr
 │  │  │  │  ├── hyprland.conf
 │  │  │  │  ├── hyprpaper.conf
 │  │  │  │  ├── mocha.conf
-│  │  │  │  ├── progressBar.sh
 │  │  │  │  └── README.md
 │  │  │  ├── kitty
 │  │  │  │  ├── catppuccin-mocha.conf
@@ -62,12 +67,6 @@ exa -a --tree -I .git
 │  │  │  │  └── config
 │  │  │  ├── networkmanager-dmenu
 │  │  │  │  └── config.ini
-│  │  │  ├── nvim
-│  │  │  │  ├── lua
-│  │  │  │  │  └── custom
-│  │  │  │  │     ├── chadrc.lua
-│  │  │  │  │     └── init.lua
-│  │  │  │  └── README.md
 │  │  │  ├── picom
 │  │  │  │  └── picom.conf
 │  │  │  ├── qtile
@@ -81,10 +80,18 @@ exa -a --tree -I .git
 │  │  │  │  ├── import-gsettings.sh
 │  │  │  │  ├── README.md
 │  │  │  │  └── shutdown.sh
-│  │  │  └── waybar
-│  │  │     ├── catppuccin-mocha.css
-│  │  │     ├── config.jsonc
-│  │  │     └── style.css
+│  │  │  ├── utils
+│  │  │  │  ├── autoSleep.sh
+│  │  │  │  ├── import-gsettings.sh
+│  │  │  │  ├── progressbar.sh
+│  │  │  │  └── reload-hyprpaper.sh
+│  │  │  ├── waybar
+│  │  │  │  ├── catppuccin-mocha.css
+│  │  │  │  ├── config.jsonc
+│  │  │  │  └── style.css
+│  │  │  └── zathura
+│  │  │     ├── catppuccin-mocha
+│  │  │     └── zathurarc
 │  │  ├── .inputrc
 │  │  ├── .npmrc
 │  │  ├── .profile
@@ -103,8 +110,8 @@ exa -a --tree -I .git
 ├── other
 │  ├── .gitconfig
 │  ├── lsd
+│  │  ├── colors.yaml
 │  │  ├── config.yaml
-│  │  ├── custom-theme.yaml
 │  │  └── readme.md
 │  ├── Microsoft.PowerShell_profile.ps1
 │  ├── Prettier
@@ -117,9 +124,9 @@ exa -a --tree -I .git
 │  │  ├── manage_extensions.py
 │  │  ├── README.md
 │  │  └── VSCode_Settings.jsonc
-│  └── Windows Terminal
-│     ├── Catppuccin Mocha.json
-│     ├── Catppuccin Mocha Terminal Theme.json
+│  └── 'Windows Terminal'
+│     ├── 'Catppuccin Mocha.json'
+│     ├── 'Catppuccin Mocha Terminal Theme.json'
 │     ├── README.md
 │     └── settings.json
 └── README.md
