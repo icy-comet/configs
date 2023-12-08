@@ -27,6 +27,6 @@ export PATH="$PATH:$HOME/.local/bin/"
 
 export MPD_HOST="$HOME/.config/mpd/socket"
 
-export BEMENU_OPTS="-i -l 20 --fb '#1e1e2e' --ff '#94e2d5' --nb '#1e1e2e' --nf '#f5e0dc' --tb '#1e1e2e' --hb '#1e1e2e' --tf '#cba6f7' --hf '#89b4fa' --nf '#f5e0dc' --af '#f5e0dc' --ab '#1e1e2e' -H 32 -p 'Run:'"
+export BEMENU_OPTS="-H 32 --hp 10 --fn 'MonoLisa Nerd Font 9' --fb '#1e1e2e' --ff '#cdd6f4' --nb '#1e1e2e' --nf '#cdd6f4' --tb '#1e1e2e' --hb '#f2cdcd' --tf '#f38ba8' --hf '#1e1e2e' --nf '#cdd6f4' --af '#cdd6f4' --ab '#1e1e2e'"
 
 export QT_STYLE_OVERRIDE="kvantum"
