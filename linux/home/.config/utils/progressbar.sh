@@ -2,9 +2,17 @@
 
 entity="$1"
 verb="$2"
+barIcon=""
+barPercent=""
 
-function updateWindow() {
+function openWindow() {
+    eww update barIcon="$barIcon" barPercent="$barPercent" && eww open overlaybar
+    barPresses=$(eww get barPresses)
+    barPresses=$((barPresses + 1))
+    eww update barPresses="$barPresses"
+
     sleep 1
+
     barPresses=$(eww get barPresses)
     barPresses=$((barPresses - 1))
     eww update barPresses="$barPresses"
@@ -44,8 +52,4 @@ else
     exit 1
 fi
 
-eww update barIcon="$barIcon" barPercent="$barPercent" && eww open overlaybar
-barPresses=$(eww get barPresses)
-barPresses=$((barPresses + 1))
-eww update barPresses="$barPresses"
-updateWindow
+openWindow
