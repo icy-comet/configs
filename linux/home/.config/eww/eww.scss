@@ -14,14 +14,14 @@ $surface1: #45475a;
 
 * {
   all: unset;
-  font-family: "MonoLisa Nerd Font";
+  font-family: "MonoLisa Nerd Font Mono";
 }
 
 // ========================================
 // █▀█ █▀█ █░█░█ █▀▀ █▀█ █▀▄▀█ █▀▀ █▄░█ █░█
 // █▀▀ █▄█ ▀▄▀▄▀ ██▄ █▀▄ █░▀░█ ██▄ █░▀█ █▄█
 // ========================================
-.powerBox {
+.powerMenu {
   button {
     background: $base;
     font-size: 85px;
@@ -58,7 +58,7 @@ $surface1: #45475a;
 // █▀█ █░█ █▀▀ █▀█ █░░ ▄▀█ █▄█   █▄▄ ▄▀█ █▀█
 // █▄█ ▀▄▀ ██▄ █▀▄ █▄▄ █▀█ ░█░   █▄█ █▀█ █▀▄
 // =========================================
-.percentBox {
+.progressBar {
   $borderRadius: 50px;
   $barHeight: 11px;
   $barColor: $yellow;
