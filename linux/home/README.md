@@ -1,3 +1,2 @@
-- Instead of setting PATH in `.zprofile`, it can be set in `.zshenv` by also adding ZSH-specific `typeset -U path` command to the file.
-This prevents duplicate entries in PATH since `.zshenv` is sourced every single time. Refer the [docs](https://zsh.sourceforge.io/Guide/zshguide02.html#l24).
+- Instead of setting PATH in `.zprofile`, it can be set in `.zshenv` by also adding ZSH-specific `typeset -U path` command to the file. This prevents duplicate entries in PATH since `.zshenv` is sourced every single time. Refer the [docs](https://zsh.sourceforge.io/Guide/zshguide02.html#l24).
 - Instead of using `export PATH` syntax PATH can also be set in ZSH with `path+="/path/to/dir"` syntax.

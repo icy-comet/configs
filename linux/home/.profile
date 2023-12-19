@@ -13,13 +13,10 @@ export PATH="$PATH:$HOME/.deta/bin"
 # source rustup env file
 if [ -r "$HOME/.cargo/env" ]; then . "$HOME/.cargo/env"; fi
 
-# Doom CLI
-export PATH="$PATH:$HOME/.config/emacs/bin"
-
 # Eww bin
 export PATH="$PATH:$HOME/Git/eww/target/release"
 
-#Golang bin
+# Golang bin
 export PATH="$PATH:$HOME/go/bin"
 
 # pipx bin

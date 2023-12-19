@@ -9,7 +9,7 @@
   "gitlens.telemetry.enabled": false,
   // needed with Redhat extensions -- YAML, Ansible
   "redhat.telemetry.enabled": false,
-  "editor.fontSize": 15,
+  "editor.fontSize": 16,
   // in-built bracket colorization
   "editor.fontFamily": "\"MonoLisa Nerd Font\", monospace",
   "terminal.integrated.fontFamily": "\"MonoLisa Nerd Font\"",
@@ -21,7 +21,6 @@
   "explorer.confirmDelete": true,
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
-  "workbench.productIconTheme": "icons-carbon",
   "github.gitAuthentication": false,
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
@@ -60,7 +59,6 @@
   "workbench.colorTheme": "Catppuccin Mocha",
   "gruvboxMaterial.darkContrast": "hard",
   "svelte.enable-ts-plugin": true,
-  "window.zoomLevel": 0,
   "window.density.editorTabHeight": "compact",
   "update.showReleaseNotes": false
 }
