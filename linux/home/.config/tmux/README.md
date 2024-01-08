@@ -1,1 +1,1 @@
-Clone [catppuccin theme](https://github.com/catppuccin/tmux.git) in the config directory.
+- Clone [catppuccin theme](https://github.com/catppuccin/tmux.git) in the config directory.

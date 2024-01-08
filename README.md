@@ -5,6 +5,8 @@
 
 These are some of the configurations I use on my machines regularly. My configs continuously evolve according to my needs and the repo may lag behind on reflecting my choices/changes.
 
+I am currently daily-driving Hyprland.
+
 ### Repo Structure
 ```bash
 # lsd/exa
@@ -15,7 +17,6 @@ exa -a --tree -I .git
 .
 ├── .editorconfig
 ├── .gitignore
-├── abcd.txt
 ├── LICENSE
 ├── linux
 │  ├── etc
@@ -48,7 +49,9 @@ exa -a --tree -I .git
 │  │  │  ├── electron-flags.conf
 │  │  │  ├── eww
 │  │  │  │  ├── eww.scss
-│  │  │  │  └── eww.yuck
+│  │  │  │  ├── eww.yuck
+│  │  │  │  ├── overlayBar.yuck
+│  │  │  │  └── powerWindow.yuck
 │  │  │  ├── gtk-3.0
 │  │  │  │  ├── bookmarks
 │  │  │  │  └── settings.ini
@@ -80,10 +83,13 @@ exa -a --tree -I .git
 │  │  │  │  ├── import-gsettings.sh
 │  │  │  │  ├── README.md
 │  │  │  │  └── shutdown.sh
+│  │  │  ├── tmux
+│  │  │  │  ├── README.md
+│  │  │  │  └── tmux.conf
 │  │  │  ├── utils
 │  │  │  │  ├── autoSleep.sh
 │  │  │  │  ├── import-gsettings.sh
-│  │  │  │  ├── progressbar.sh
+│  │  │  │  ├── loud_light_control.sh
 │  │  │  │  └── reload-hyprpaper.sh
 │  │  │  ├── waybar
 │  │  │  │  ├── catppuccin-mocha.css
@@ -97,6 +103,7 @@ exa -a --tree -I .git
 │  │  ├── .profile
 │  │  ├── .ssh
 │  │  │  └── config
+│  │  ├── .stow-local-ignore
 │  │  ├── .wslrc.sh
 │  │  ├── .Xresources
 │  │  ├── .zprofile
