@@ -1,11 +1,10 @@
 {
     "layer": "top",
     "height": 28,
-    "margin-top": 3,
-    "margin-right": 8,
-    "margin-left": 8,
+    "margin-top": 2,
+    "margin-right": 6,
+    "margin-left": 6,
     "modules-left": [
-        "custom/osIcon",
         "hyprland/workspaces"
     ],
     "modules-center": [
@@ -28,16 +27,6 @@
     "hyprland/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
-        "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "󰠮",
-            "4": "󰨞",
-            "5": "",
-            "6": "",
-            "default": ""
-            // "active": "󰮯"
-        },
         "persistent-workspaces": {
             "1": [],
             "2": [],
