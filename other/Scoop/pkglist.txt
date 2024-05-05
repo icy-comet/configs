@@ -22,14 +22,12 @@ less
 lsd
 make
 micro
-musikcube
 neovim
 nmap
 oh-my-posh
 pandoc
 perl
 ripgrep
-rufus
 rust
 scrcpy
 starship
