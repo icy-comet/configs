@@ -56,10 +56,16 @@
   "liveshare.guestApprovalRequired": true,
   "window.menuBarVisibility": "compact",
   "material-icon-theme.saturation": 0.95,
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.colorTheme": "Gruvbox Material Dark",
   "gruvboxMaterial.darkContrast": "hard",
   "svelte.enable-ts-plugin": true,
   "window.density.editorTabHeight": "compact",
   "update.showReleaseNotes": false,
-  "cmake.showOptionsMovedNotification": false
+  "cmake.showOptionsMovedNotification": false,
+  "catppuccin.italicKeywords": false,
+  "catppuccin.boldKeywords": false,
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+  "workbench.sideBar.location": "right"
 }
