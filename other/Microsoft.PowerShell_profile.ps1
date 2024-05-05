@@ -23,5 +23,8 @@ Function ln {
 }
 
 Function ll {
-  lsd -l -a
+  param (
+    $Location
+  )
+  lsd -l -a $Location
 }
