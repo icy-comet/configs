@@ -31,3 +31,6 @@ export BEMENU_OPTS="-H 32 --hp 10 --fn 'MonoLisa Nerd Font 9' --fb '#1e1e2e' --f
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# grimshot default dir
+export XDG_SCREENSHOTS_DIR="$HOME/SCREENSHOTS"
