@@ -22,3 +22,8 @@ if [ "$prefer_dark_theme" = "true" ]
 then
   gsettings set "$gnome_schema" color-scheme "prefer-dark"
 fi
+
+# added by me
+cursor_size="$(grep 'gtk-cursor-theme-size' "$config" | sed 's/.*\s*=\s*//')"
+gsettings set "$gnome_schema" cursor-size "$cursor_size"
+swaymsg seat seat0 xcursor_theme $cursor_theme $cursor_size
