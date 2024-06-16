@@ -13,9 +13,6 @@ export PATH="$PATH:$HOME/.deta/bin"
 # source rustup env file
 if [ -r "$HOME/.cargo/env" ]; then . "$HOME/.cargo/env"; fi
 
-# Eww bin
-export PATH="$PATH:$HOME/Git/eww/target/release"
-
 # Golang bin
 export PATH="$PATH:$HOME/go/bin"
 
