@@ -19,6 +19,10 @@ export PATH="$PATH:$HOME/go/bin"
 # pipx bin
 export PATH="$PATH:$HOME/.local/bin/"
 
+# volta setup
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$PATH:$VOLTA_HOME/bin"
+
 export MPD_HOST="$HOME/.config/mpd/socket"
 
 export BEMENU_OPTS="-H 32 --hp 10 --fn 'MonoLisa Nerd Font 9' --fb '#1e1e2e' --ff '#cdd6f4' --nb '#1e1e2e' --nf '#cdd6f4' --tb '#1e1e2e' --hb '#f2cdcd' --tf '#f38ba8' --hf '#1e1e2e' --nf '#cdd6f4' --af '#cdd6f4' --ab '#1e1e2e'"
