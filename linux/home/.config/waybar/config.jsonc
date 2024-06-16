@@ -1,15 +1,19 @@
 {
     "layer": "top",
+    "position": "top",
+    "mode": "dock",
+    "exclusive": true,
     "height": 28,
     "margin-top": 2,
     "margin-right": 6,
     "margin-left": 6,
+    "spacing": 4,
     "modules-left": [
-        "hyprland/workspaces"
+        "sway/workspaces"
     ],
     "modules-center": [
         "clock",
-        "hyprland/submap"
+        "sway/mode"
     ],
     "modules-right": [
         "tray",
@@ -20,12 +24,8 @@
         "bluetooth",
         "network"
     ],
-    "custom/osIcon": {
-        "format": "",
-        "tooltip": false
-    },
-    "hyprland/workspaces": {
-        "format": "{icon}",
+    "sway/workspaces": {
+        "format": "{index}",
         "on-click": "activate",
         "persistent-workspaces": {
             "1": [],
@@ -36,7 +36,7 @@
             "6": []
         }
     },
-    "hyprland/submap": {
+    "sway/mode": {
         "format": "{}",
         "max-length": 8,
         "tooltip": false
