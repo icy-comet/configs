@@ -62,8 +62,8 @@
             "speaker": "󰓃",
             "hdmi": "󰽟"
         },
-        "on-scroll-up": "~/.config/utils/loud_light_control.sh volume up",
-        "on-scroll-down": "~/.config/utils/loud_light_control.sh volume down",
+        "on-scroll-up": "~/.config/utils/sensory-control.sh volume up",
+        "on-scroll-down": "~/.config/utils/sensory-control.sh volume down",
         "on-click": "pavucontrol",
         "ignored-sinks": [
             "Easy Effects Sink"
@@ -87,8 +87,8 @@
             "",
             ""
         ],
-        "on-scroll-up": "~/.config/utils/loud_light_control.sh brightness up",
-        "on-scroll-down": "~/.config/utils/loud_light_control.sh brightness down"
+        "on-scroll-up": "~/.config/utils/sensory-control.sh brightness up",
+        "on-scroll-down": "~/.config/utils/sensory-control.sh brightness down"
     },
     "battery": {
         "states": {
