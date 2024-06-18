@@ -34,3 +34,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # grimshot default dir
 export XDG_SCREENSHOTS_DIR="$HOME/SCREENSHOTS"
+
+# electron v28+ --> https://www.electronjs.org/docs/latest/api/environment-variables#electron_ozone_platform_hint-linux
+export ELECTRON_OZONE_PLATFORM_HINT="auto"
