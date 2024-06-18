@@ -56,7 +56,6 @@
   "liveshare.guestApprovalRequired": true,
   "window.menuBarVisibility": "compact",
   "material-icon-theme.saturation": 0.95,
-  "workbench.colorTheme": "Gruvbox Material Dark",
   "gruvboxMaterial.darkContrast": "hard",
   "svelte.enable-ts-plugin": true,
   "window.density.editorTabHeight": "compact",
@@ -67,5 +66,6 @@
   "workbench.editorAssociations": {
     "*.pdf": "latex-workshop-pdf-hook"
   },
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Catppuccin Mocha"
 }
