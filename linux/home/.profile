@@ -25,7 +25,7 @@ export PATH="$PATH:$VOLTA_HOME/bin"
 
 export MPD_HOST="$HOME/.config/mpd/socket"
 
-export BEMENU_OPTS="-H 32 --hp 10 --fn 'MonoLisa Nerd Font 9' --fb '#1e1e2e' --ff '#cdd6f4' --nb '#1e1e2e' --nf '#cdd6f4' --tb '#1e1e2e' --hb '#f2cdcd' --tf '#f38ba8' --hf '#1e1e2e' --nf '#cdd6f4' --af '#cdd6f4' --ab '#1e1e2e'"
+export BEMENU_OPTS="--fn 'MonoLisa Nerd Font 9' --fb "#1e1e2e" --ff "#cdd6f4" --nb "#1e1e2e" --nf "#cdd6f4" --tb "#1e1e2e" --hb "#89dceb" --hf "#1e1e2e" --tf "#f38ba8" --af "#cdd6f4" --ab "#1e1e2e" --bdr '#89dceb' --cw 10 -l 5 -c -p 'Run:' --no-overlap -W 0.5 --border 1 -H 30 --hp 10"
 
 # export QT_STYLE_OVERRIDE="kvantum"
 
