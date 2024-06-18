@@ -1,0 +1,6 @@
+[submodule "linux/home/.zshplugins/zsh-history-substring-search"]
+	path = linux/home/.zshplugins/zsh-history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search.git
+[submodule "linux/home/.tmuxtheme"]
+	path = linux/home/.tmuxtheme
+	url = https://github.com/catppuccin/tmux.git
