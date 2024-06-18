@@ -40,4 +40,7 @@ export ELECTRON_OZONE_PLATFORM_HINT="auto"
 
 # GNOME & Qt apps need to be instructed to look here on Wayland
 # also noted in the Arch Wiki
-export XCURSOR_PATH="$XCURSOR_PATH:~/.local/share/icons"
+if [ ! -z "$XCURSOR_PATH" ]; then
+    XCURSOR_PATH="$XCURSOR_PATH:"
+fi
+export XCURSOR_PATH="$XCURSOR_PATH$HOME/.local/share/icons"
