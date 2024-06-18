@@ -30,7 +30,7 @@ set $filemanager nautilus
 # ░█░ █▀█ ██▄ █░▀░█ █ █░▀█ █▄█
 # ============================
 
-  include catppuccin-mocha
+include catppuccin-mocha
 # target                 title-border  title-background  title-text  split-indicator  view-border
 client.focused           $sky   $sky  $mantle  $lavender  $sky
 client.focused_inactive  $overlay0   $overlay0  $mantle  $lavender  $overlay0
@@ -240,9 +240,10 @@ for_window {
 exec waybar
 exec batsignal
 exec mpris-proxy
-exec avizo-service
 exec ~/.config/utils/autoSleep.sh
 exec easyeffects --gapplication-service
 exec ~/.config/utils/import-gsettings.sh
 exec gnome-keyring-daemon --start --components=secrets
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec kdeconnectd
+exec syncthing serve --no-browser --logfile=default
