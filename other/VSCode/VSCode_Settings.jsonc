@@ -12,7 +12,7 @@
   "editor.fontSize": 16,
   // in-built bracket colorization
   "editor.fontFamily": "\"MonoLisa Nerd Font\", monospace",
-  "terminal.integrated.fontFamily": "\"MonoLisa Nerd Font\"",
+  "terminal.integrated.fontFamily": "\"MonoLisa Nerd Font Mono\"",
   "editor.fontLigatures": "dlig,liga,cv02,cv05,cv09,cv14,cv16,cv25,cv26,cv28,cv31,cv32,ss01,ss02,ss03,ss04,ss05,ss06,ss07,ss08,ss10,zero,onum,calt,call",
   "editor.wordWrap": "on",
   "emmet.includeLanguages": {

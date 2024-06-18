@@ -27,7 +27,7 @@
         "clock"
     ],
     "power-profiles-daemon": {
-        "format": "   {profile}"
+        "format": " {profile}"
     },
     "sway/workspaces": {
         "format": "{index}",
@@ -50,12 +50,12 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "󰅶  caffeinated",
-            "deactivated": "󰾪  decaffed"
+            "activated": "󰅶 caffeinated",
+            "deactivated": "󰾪 decaffed"
         }
     },
     "pulseaudio": {
-        "format": "{icon}  {volume}%",
+        "format": "{icon} {volume}%",
         "format-muted": "󰝟",
         "format-icons": {
             "headphone": "󰋋",
@@ -72,11 +72,11 @@
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "  {:%H:%M}",
-        "format-alt": "  {:%A, %B %d, %Y}"
+        "format": " {:%H:%M}",
+        "format-alt": " {:%A, %B %d, %Y}"
     },
     "backlight": {
-        "format": "{icon}  {percent}%",
+        "format": "{icon} {percent}%",
         "format-icons": [
             "",
             "",
@@ -96,8 +96,8 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "{icon}  {capacity}%",
-        "format-charging": "󰂄  {capacity}%",
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
         "format-icons": [
             "󰁺",
             "󰁻",
@@ -113,10 +113,10 @@
         "interval": 30
     },
     "bluetooth": {
-        "format-on": "󰂯  On",
-        "format-off": "󰂯  Off",
-        "format-disabled": "󰂯  Disabled",
-        "format-connected": "󰂯  Connected",
+        "format-on": "󰂯 On",
+        "format-off": "󰂯 Off",
+        "format-disabled": "󰂯 Disabled",
+        "format-connected": "󰂯 Connected",
         "tooltip-format": "Bluetooth",
         "tooltip-format-connected": "Connected — {device_alias}",
         "tooltip-format-connected-battery": "Connected — {device_alias} — 󰥈 {device_battery_percentage}%",
@@ -126,14 +126,14 @@
         "on-click": "networkmanager_dmenu",
         "format-wifi": "{icon}  {signalStrength}%",
         "format-linked": "{ifname}  (No IP)" ,
-        "format-ethernet": "   {ifname}",
+        "format-ethernet": " {ifname}",
             "format-icons": [
                 "󰤟",
                 "󰤢",
                 "󰤥",
                 "󰤨"
             ],
-        "format-disconnected": "󰤮   Disconnected",
+        "format-disconnected": "󰤮 Disconnected",
         "tooltip-format": "{essid}"
     }
 }
