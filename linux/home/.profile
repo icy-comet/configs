@@ -29,9 +29,6 @@ export BEMENU_OPTS="--fn 'MonoLisa Nerd Font 9' --fb "#1e1e2e" --ff "#cdd6f4" --
 
 # export QT_STYLE_OVERRIDE="kvantum"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
 # grimshot default dir
 export XDG_SCREENSHOTS_DIR="$HOME/SCREENSHOTS"
 
