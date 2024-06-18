@@ -3,38 +3,39 @@
     "position": "top",
     "mode": "dock",
     "exclusive": true,
-    "height": 28,
-    "margin-top": 2,
-    "margin-right": 6,
-    "margin-left": 6,
-    "spacing": 4,
+    "height": 24,
+    // "margin-top": 2,
+    // "margin-right": 2,
+    // "margin-left": 2,
+    "margin-bottom": 4,
+    //"spacing": 4,
     "modules-left": [
-        "sway/workspaces"
+        "sway/workspaces",
+        "sway/mode",
+        "sway/window"
     ],
-    "modules-center": [
-        "clock",
-        "sway/mode"
-    ],
+    "modules-center": [],
     "modules-right": [
-        "tray",
+        // "tray",
         "backlight",
         "idle_inhibitor",
+        "power-profiles-daemon",
         "battery",
         "pulseaudio",
         "bluetooth",
-        "network"
+        "network",
+        "clock"
     ],
+    "power-profiles-daemon": {
+        "format": "   {profile}"
+    },
     "sway/workspaces": {
         "format": "{index}",
-        "on-click": "activate",
-        "persistent-workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": [],
-            "6": []
-        }
+        "on-click": "activate"
+    },
+    "sway/window": {
+        "format": "{app_id} — {title}",
+        "tooltip": false
     },
     "sway/mode": {
         "format": "{}",
@@ -49,12 +50,12 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "󰅶 caffeinated",
-            "deactivated": "󰾪 decaffed"
+            "activated": "󰅶  caffeinated",
+            "deactivated": "󰾪  decaffed"
         }
     },
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "{icon}  {volume}%",
         "format-muted": "󰝟",
         "format-icons": {
             "headphone": "󰋋",
@@ -71,11 +72,11 @@
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": " {:%H:%M}",
-        "format-alt": " {:%A, %B %d, %Y}"
+        "format": "  {:%H:%M}",
+        "format-alt": "  {:%A, %B %d, %Y}"
     },
     "backlight": {
-        "format": "{icon} {percent}%",
+        "format": "{icon}  {percent}%",
         "format-icons": [
             "",
             "",
@@ -95,8 +96,8 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "{icon} {capacity}%",
-        "format-charging": "󰂄 {capacity}%",
+        "format": "{icon}  {capacity}%",
+        "format-charging": "󰂄  {capacity}%",
         "format-icons": [
             "󰁺",
             "󰁻",
@@ -112,10 +113,10 @@
         "interval": 30
     },
     "bluetooth": {
-        "format-on": "󰂯 On",
-        "format-off": "󰂯 Off",
-        "format-disabled": "󰂯 Disabled",
-        "format-connected": "󰂯 Connected",
+        "format-on": "󰂯  On",
+        "format-off": "󰂯  Off",
+        "format-disabled": "󰂯  Disabled",
+        "format-connected": "󰂯  Connected",
         "tooltip-format": "Bluetooth",
         "tooltip-format-connected": "Connected — {device_alias}",
         "tooltip-format-connected-battery": "Connected — {device_alias} — 󰥈 {device_battery_percentage}%",
@@ -123,15 +124,16 @@
     },
     "network": {
         "on-click": "networkmanager_dmenu",
-        "format-wifi": "{icon} {signalStrength}%",
-        "format-linked": "{ifname} (No IP)  ",
-        "format-icons": [
-            "󰤟",
-            "󰤢",
-            "󰤥",
-            "󰤨"
-        ],
-        "format-disconnected": "󰤮 Disconnected",
-        "tooltip-format": "{essid} {signalStrength}%"
+        "format-wifi": "{icon}  {signalStrength}%",
+        "format-linked": "{ifname}  (No IP)" ,
+        "format-ethernet": "   {ifname}",
+            "format-icons": [
+                "󰤟",
+                "󰤢",
+                "󰤥",
+                "󰤨"
+            ],
+        "format-disconnected": "󰤮   Disconnected",
+        "tooltip-format": "{essid}"
     }
 }
