@@ -37,3 +37,7 @@ export XDG_SCREENSHOTS_DIR="$HOME/SCREENSHOTS"
 
 # electron v28+ --> https://www.electronjs.org/docs/latest/api/environment-variables#electron_ozone_platform_hint-linux
 export ELECTRON_OZONE_PLATFORM_HINT="auto"
+
+# GNOME & Qt apps need to be instructed to look here on Wayland
+# also noted in the Arch Wiki
+export XCURSOR_PATH="$XCURSOR_PATH:~/.local/share/icons"
