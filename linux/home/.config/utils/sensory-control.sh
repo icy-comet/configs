@@ -2,22 +2,27 @@
 
 entity="$1"
 verb="$2"
+current_vol=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '\d+(?=%)' | head -n 1)
 
 if [ "$entity" == "volume" ]; then
     if [ "$verb" == "up" ]; then
-        volumectl -d -u up
+        if [ $current_vol -lt 100 ]; then
+            pactl set-sink-volume @DEFAULT_SINK@ +5%
+        elif [ $current_vol -gt 100 ]; then
+            pactl set-sink-volume @DEFAULT_SINK@ 100%
+        fi
     elif [ "$verb" == "down" ]; then
-        volumectl -d -u down
+        pactl set-sink-volume @DEFAULT_SINK@ -5%
     elif [ "$verb" == "mute" ]; then
-        volumectl -d -u mute
+        pactl set-sink-mute @DEFAULT_SINK@ toggle
     else
         exit 1
     fi
 elif [ "$entity" == "brightness" ]; then
     if [ "$verb" == "up" ]; then
-        lightctl -d up
+        brightnessctl set 5%+
     elif [ "$verb" == "down" ]; then
-        lightctl -d down
+        brightnessctl set 5%-
     else
         exit 1
     fi
