@@ -1,8 +1,0 @@
-window:
-  padding:
-    x: 5
-    y: 0
-
-font:
-  family: "MonoLisa Nerd Font Mono"
-  size: 12.0
