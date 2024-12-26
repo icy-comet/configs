@@ -9,7 +9,8 @@
   "gitlens.telemetry.enabled": false,
   // needed with Redhat extensions -- YAML, Ansible
   "redhat.telemetry.enabled": false,
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
+  // "editor.lineHeight": 1.7,
   // in-built bracket colorization
   "editor.fontFamily": "\"MonoLisa Nerd Font\", monospace",
   "terminal.integrated.fontFamily": "\"MonoLisa Nerd Font Mono\"",
@@ -22,6 +23,44 @@
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
   "github.gitAuthentication": false,
+  "editor.accessibilitySupport": "off",
+  "material-icon-theme.folders.color": "#90a4ae",
+  "material-icon-theme.activeIconPack": "none",
+  "material-icon-theme.folders.theme": "classic",
+  "workbench.iconTheme": "material-icon-theme",
+  "go.toolsManagement.autoUpdate": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.scale": 2,
+  "editor.minimap.autohide": true,
+  "window.commandCenter": true,
+  "liveshare.guestApprovalRequired": true,
+  "window.menuBarVisibility": "compact",
+  "material-icon-theme.saturation": 0.9,
+  "svelte.enable-ts-plugin": true,
+  "window.density.editorTabHeight": "compact",
+  "update.showReleaseNotes": false,
+  "cmake.showOptionsMovedNotification": false,
+  "catppuccin.italicKeywords": false,
+  "catppuccin.boldKeywords": false,
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+  "workbench.sideBar.location": "right",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
@@ -37,35 +76,5 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.accessibilitySupport": "off",
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "material-icon-theme.folders.color": "#a5adcb",
-  "material-icon-theme.activeIconPack": "none",
-  "material-icon-theme.folders.theme": "classic",
-  "workbench.iconTheme": "catppuccin-mocha",
-  "go.toolsManagement.autoUpdate": true,
-  "editor.minimap.renderCharacters": false,
-  "editor.minimap.scale": 2,
-  "editor.minimap.autohide": true,
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "window.commandCenter": true,
-  "liveshare.guestApprovalRequired": true,
-  "window.menuBarVisibility": "compact",
-  "material-icon-theme.saturation": 0.95,
-  "gruvboxMaterial.darkContrast": "hard",
-  "svelte.enable-ts-plugin": true,
-  "window.density.editorTabHeight": "compact",
-  "update.showReleaseNotes": false,
-  "cmake.showOptionsMovedNotification": false,
-  "catppuccin.italicKeywords": false,
-  "catppuccin.boldKeywords": false,
-  "workbench.editorAssociations": {
-    "*.pdf": "latex-workshop-pdf-hook"
-  },
-  "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "Catppuccin Mocha"
+  "workbench.colorTheme": "Gruvbox Dark Medium"
 }
