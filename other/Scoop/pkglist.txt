@@ -1,5 +1,4 @@
 7zip
-adb
 apktool
 aria2
 bat
@@ -7,6 +6,7 @@ cmake
 curl
 delta
 exiftool
+eza
 fd
 ffmpeg
 fzf
@@ -18,6 +18,7 @@ hugo-extended
 imagemagick
 innoextract
 innounp
+kubo
 less
 lsd
 make
@@ -28,7 +29,6 @@ oh-my-posh
 pandoc
 perl
 ripgrep
-rust
 scrcpy
 starship
 syncthing
