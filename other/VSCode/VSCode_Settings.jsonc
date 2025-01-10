@@ -1,80 +1,87 @@
 {
-  // ==============================
-  // Windows/Linux Common Settings
-  // ==============================
+    // ==============================
+    // Windows/Linux Common Settings
+    // ==============================
 
-  // required for not crashing on Wayland, and better aesthetics in general
-  "window.titleBarStyle": "custom",
-  "telemetry.telemetryLevel": "off",
-  "gitlens.telemetry.enabled": false,
-  // needed with Redhat extensions -- YAML, Ansible
-  "redhat.telemetry.enabled": false,
-  "editor.fontSize": 15,
-  // "editor.lineHeight": 1.7,
-  // in-built bracket colorization
-  "editor.fontFamily": "\"MonoLisa Nerd Font\", monospace",
-  "terminal.integrated.fontFamily": "\"MonoLisa Nerd Font Mono\"",
-  "editor.fontLigatures": "dlig,liga,cv02,cv05,cv09,cv14,cv16,cv25,cv26,cv28,cv31,cv32,ss01,ss02,ss03,ss04,ss05,ss06,ss07,ss08,ss10,zero,onum,calt,call",
-  "editor.wordWrap": "on",
-  "emmet.includeLanguages": {
-    "nunjucks": "html"
-  },
-  "explorer.confirmDelete": true,
-  "files.trimTrailingWhitespace": true,
-  "files.trimFinalNewlines": true,
-  "github.gitAuthentication": false,
-  "editor.accessibilitySupport": "off",
-  "material-icon-theme.folders.color": "#90a4ae",
-  "material-icon-theme.activeIconPack": "none",
-  "material-icon-theme.folders.theme": "classic",
-  "workbench.iconTheme": "material-icon-theme",
-  "go.toolsManagement.autoUpdate": true,
-  "editor.minimap.renderCharacters": false,
-  "editor.minimap.scale": 2,
-  "editor.minimap.autohide": true,
-  "window.commandCenter": true,
-  "liveshare.guestApprovalRequired": true,
-  "window.menuBarVisibility": "compact",
-  "material-icon-theme.saturation": 0.9,
-  "svelte.enable-ts-plugin": true,
-  "window.density.editorTabHeight": "compact",
-  "update.showReleaseNotes": false,
-  "cmake.showOptionsMovedNotification": false,
-  "catppuccin.italicKeywords": false,
-  "catppuccin.boldKeywords": false,
-  "workbench.editorAssociations": {
-    "*.pdf": "latex-workshop-pdf-hook"
-  },
-  "workbench.sideBar.location": "right",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[liquid]": {
-    "editor.defaultFormatter": "sissel.shopify-liquid"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "workbench.colorTheme": "Gruvbox Dark Medium"
+    // required for not crashing on Wayland, and better aesthetics in general
+    "window.titleBarStyle": "custom",
+    "telemetry.telemetryLevel": "off",
+    "gitlens.telemetry.enabled": false,
+    // needed with Redhat extensions -- YAML, Ansible
+    "redhat.telemetry.enabled": false,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 1.75,
+    // in-built bracket colorization
+    "editor.fontFamily": "'MonoLisa Nerd Font', sans-serif",
+    // "terminal.integrated.fontFamily": "\"MonoLisa Nerd Font Mono\"",
+    "editor.fontLigatures": "'calt' on, 'liga' on, 'ss04' on, 'zero' on, 'ss01' on, 'ss02' on, 'ss18' on, 'ss05' off, 'ss07' on, 'ss08' on, 'ss10' on, 'ss11' on, 'ss12' on, 'ss13' on, 'ss14' on, 'ss15' on, 'ss16' on, 'ss17' on, 'case' on",
+    "editor.wordWrap": "on",
+    "emmet.includeLanguages": {
+        "nunjucks": "html"
+    },
+    "explorer.confirmDelete": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "github.gitAuthentication": false,
+    "editor.accessibilitySupport": "off",
+    "go.toolsManagement.autoUpdate": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.scale": 2,
+    "editor.minimap.autohide": true,
+    "window.commandCenter": true,
+    "liveshare.guestApprovalRequired": true,
+    "window.menuBarVisibility": "compact",
+    "material-icon-theme.saturation": 0.9,
+    "svelte.enable-ts-plugin": true,
+    "window.density.editorTabHeight": "compact",
+    "update.showReleaseNotes": false,
+    "cmake.showOptionsMovedNotification": false,
+    // "workbench.sideBar.location": "right",
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[liquid]": {
+        "editor.defaultFormatter": "sissel.shopify-liquid"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.iconTheme": "catppuccin-mocha",
+    "editor.semanticHighlighting.enabled": true,
+    "terminal.integrated.minimumContrastRatio": 1,
+    "gopls": {
+        "ui.semanticTokens": true
+    },
+    "catppuccin.accentColor": "sapphire",
+    "catppuccin.italicKeywords": false,
+    "catppuccin.boldKeywords": false,
+    "catppuccin.workbenchMode": "minimal",
+    "workbench.tree.indent": 15,
+    "explorer.compactFolders": false,
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "editor.fontWeight": "500"
 }
