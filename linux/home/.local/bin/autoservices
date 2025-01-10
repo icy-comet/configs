@@ -1,0 +1,24 @@
+#!/bin/bash
+
+separator=$(echo -e "\n\n====\n\n")
+
+services=("waybar.service"
+          "hypridle.service"
+          "hyprpolkitagent.service"
+          "obex.service"
+          "gnome-keyring-daemon.service"
+          "hyprpaper.service"
+          "batsignal.service"
+          "mpris-proxy.service")
+
+if [ "$1" == "status" ]; then
+    for str in ${services[@]}; do
+       systemctl --user --no-pager --full status "$str"
+       echo $separator
+    done
+elif [ "$1" == "enable" ]; then
+    for str in ${services[@]}; do
+       systemctl --user --no-pager --full enable "$str"
+       echo $separator
+    done
+fi

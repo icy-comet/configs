@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# for use with waybar
+
+if [ "$1" == "toggle" ]; then
+    dunstctl set-paused toggle
+    pkill -SIGRTMIN+20 waybar
+fi
+
+status=$(dunstctl is-paused)
+tooltip="notifications daemon status"
+
+if [ "$status" == "false" ]; then
+    text="󰂚 dnd off"
+else
+    text="󰂛 dnd on"
+fi
+
+echo "{\"text\": \"$text\", \"tooltip\": \"$tooltip\"}"

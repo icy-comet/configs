@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# for use with waybar
+
+tooltip="night mode (bluelight filter)"
+
+if pgrep hyprsunset >/dev/null; then
+    if [ "$1" = "toggle" ]; then 
+        pkill hyprsunset
+        notify-send -t 700 "hyprsunset stoppped"
+        pkill -SIGRTMIN+10 waybar
+    else
+        text="󱩌 nightlight on"
+    fi
+else
+    if [ "$1" = "toggle" ]; then
+        hyprctl dispatch exec hyprsunset
+        notify-send -t 700 "hyprsunset started"
+        pkill -SIGRTMIN+10 waybar
+    else
+        text="󰹏 nightlight off"
+    fi
+fi
+
+echo "{\"text\": \"$text\", \"tooltip\": \"$tooltip\"}"
