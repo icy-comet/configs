@@ -41,3 +41,4 @@ if [ ! -z "$XCURSOR_PATH" ]; then
     XCURSOR_PATH="$XCURSOR_PATH:"
 fi
 export XCURSOR_PATH="$XCURSOR_PATH$HOME/.local/share/icons"
+export XCURSOR_PATH="$XCURSOR_PATH:$HOME/.icons"
