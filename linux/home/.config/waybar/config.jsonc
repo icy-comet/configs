@@ -1,23 +1,25 @@
 {
     "layer": "top",
-    "position": "top",
+    "position": "bottom",
     "mode": "dock",
     "exclusive": true,
-    "height": 24,
+    "height": 26,
     // "margin-top": 2,
-    // "margin-right": 2,
-    // "margin-left": 2,
-    "margin-bottom": 4,
+    // "margin-right": 6,
+    // "margin-left": 6,
+    // "margin-bottom": 2,
     //"spacing": 4,
     "modules-left": [
-        "sway/workspaces",
-        "sway/mode",
-        "sway/window"
+        "hyprland/workspaces",
+        "hyprland/submap",
+        "hyprland/window"
     ],
     "modules-center": [],
     "modules-right": [
         // "tray",
         "backlight",
+        "custom/bluelight",
+        "custom/dnd",
         "idle_inhibitor",
         "power-profiles-daemon",
         "battery",
@@ -29,21 +31,13 @@
     "power-profiles-daemon": {
         "format": " {profile}"
     },
-    "sway/workspaces": {
-        "format": "{index}",
-        "on-click": "activate"
-    },
-    "sway/window": {
-        "format": "{app_id} — {title}",
-        "tooltip": false
-    },
-    "sway/mode": {
-        "format": "{}",
-        "max-length": 8,
-        "tooltip": false
+    "hyprland/window": {
+        "rewrite": {
+            "^$": "󰣇 Arch"
+	}
     },
     "tray": {
-        "icon-size": 21,
+        "icon-size": 12,
         "spacing": 10,
         "show-passive-items": true
     },
@@ -63,8 +57,8 @@
             "speaker": "󰓃",
             "hdmi": "󰽟"
         },
-        "on-scroll-up": "~/.config/utils/sensory-control.sh volume up",
-        "on-scroll-down": "~/.config/utils/sensory-control.sh volume down",
+        "on-scroll-up": "sensory-control volume up",
+        "on-scroll-down": "sensory-control volume down",
         "on-click": "pavucontrol",
         "ignored-sinks": [
             "Easy Effects Sink"
@@ -88,8 +82,8 @@
             "",
             ""
         ],
-        "on-scroll-up": "~/.config/utils/sensory-control.sh brightness up",
-        "on-scroll-down": "~/.config/utils/sensory-control.sh brightness down"
+        "on-scroll-up": "sensory-control brightness up",
+        "on-scroll-down": "sensory-control brightness down"
     },
     "battery": {
         "states": {
@@ -135,5 +129,20 @@
             ],
         "format-disconnected": "󰤮 Disconnected",
         "tooltip-format": "{essid}"
+    },
+    "custom/bluelight": {
+        "exec": "bluelight-toggle",
+        "signal": 10,
+        "interval": "once",
+        "on-click": "bluelight-toggle toggle",
+        // expects i3blocks format
+        "return-type": "json"
+    },
+    "custom/dnd": {
+        "exec": "dnd-toggle",
+        "signal": 20,
+        "interval": "once",
+        "on-click": "dnd-toggle toggle",
+        "return-type": "json"
     }
 }
