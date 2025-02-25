@@ -1,7 +1,9 @@
 [global]
 width = "(0, 650)"
-height = "400"
+height = "(0,500)"
 layer = "overlay"
+origin = bottom-right
+offset = (6, 8)
 
 follow = "mouse"
 
