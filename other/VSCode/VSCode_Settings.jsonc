@@ -13,7 +13,7 @@
     "editor.lineHeight": 1.75,
     // in-built bracket colorization
     "editor.fontFamily": "'MonoLisa Nerd Font', sans-serif",
-    // "terminal.integrated.fontFamily": "\"MonoLisa Nerd Font Mono\"",
+    "terminal.integrated.fontFamily": "\"MonoLisa Nerd Font Mono\"",
     "editor.fontLigatures": "'calt' on, 'liga' on, 'ss04' on, 'zero' on, 'ss01' on, 'ss02' on, 'ss18' on, 'ss05' off, 'ss07' on, 'ss08' on, 'ss10' on, 'ss11' on, 'ss12' on, 'ss13' on, 'ss14' on, 'ss15' on, 'ss16' on, 'ss17' on, 'case' on",
     "editor.wordWrap": "on",
     "emmet.includeLanguages": {
@@ -86,5 +86,9 @@
     "workbench.tree.indent": 15,
     "explorer.compactFolders": false,
     "workbench.colorTheme": "Catppuccin Mocha",
-    "editor.fontWeight": "500"
+    "editor.fontWeight": "500",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.restoreWindows": "none"
 }
