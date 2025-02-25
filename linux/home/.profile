@@ -7,9 +7,6 @@ export EDITOR="nvim"
 # doesn't work with fish
 [[ ":$PATH:" =~ ":$HOME/bin:" ]] || export PATH="$PATH:$HOME/bin"
 
-# Deta Binary Path
-export PATH="$PATH:$HOME/.deta/bin"
-
 # source rustup env file
 if [ -r "$HOME/.cargo/env" ]; then . "$HOME/.cargo/env"; fi
 
@@ -18,6 +15,11 @@ export PATH="$PATH:$HOME/go/bin"
 
 # pipx bin
 export PATH="$PATH:$HOME/.local/bin/"
+
+# solana cli bin
+export PATH="$PATH:$HOME/.local/share/solana/install/active_release/bin"
+# anchor version manager bin
+export PATH="$PATH:$HOME/.avm/bin"
 
 # volta setup
 export VOLTA_HOME="$HOME/.volta"
