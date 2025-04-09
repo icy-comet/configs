@@ -2,6 +2,7 @@
 # Use `echo $PROFILE` to find the exact path on the system
 
 Invoke-Expression (&starship init powershell)
+fnm env --use-on-cd | Out-String | Invoke-Expression
 # oh-my-posh init pwsh --config .ohmyposhtheme.json | Invoke-Expression
 
 $env:VIRTUAL_ENV_DISABLE_PROMPT = 1
