@@ -10,7 +10,7 @@
     // needed with Redhat extensions -- YAML, Ansible
     "redhat.telemetry.enabled": false,
     "editor.fontSize": 16,
-    "editor.lineHeight": 1.75,
+    "editor.lineHeight": 1.8,
     // in-built bracket colorization
     "editor.fontFamily": "'MonoLisa Nerd Font', sans-serif",
     "terminal.integrated.fontFamily": "\"MonoLisa Nerd Font Mono\"",
@@ -85,7 +85,7 @@
     "catppuccin.workbenchMode": "minimal",
     "workbench.tree.indent": 15,
     "explorer.compactFolders": false,
-    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.colorTheme": "Rosé Pine",
     "editor.fontWeight": "500",
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
