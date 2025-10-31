@@ -14,7 +14,7 @@ alias grep="grep --color=auto"
 
 alias reload-hyprpaper="hyprctl dispatch exec ~/.config/utils/reload-hyprpaper.sh"
 
-if [ -x "$(command -v exa)" ]; then
+if [ -x "$(command -v eza)" ]; then
     alias ls="eza --group-directories-first"
     alias ll="eza -la --group-directories-first"
 fi
