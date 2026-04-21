@@ -1,94 +1,126 @@
 {
-    // ==============================
-    // Windows/Linux Common Settings
-    // ==============================
+  // ==============================
+  // Windows/Linux Common Settings
+  // ==============================
 
-    // required for not crashing on Wayland, and better aesthetics in general
-    "window.titleBarStyle": "custom",
-    "telemetry.telemetryLevel": "off",
-    "gitlens.telemetry.enabled": false,
-    // needed with Redhat extensions -- YAML, Ansible
-    "redhat.telemetry.enabled": false,
-    "editor.fontSize": 16,
-    "editor.lineHeight": 1.8,
-    // in-built bracket colorization
-    "editor.fontFamily": "'MonoLisa Nerd Font', sans-serif",
-    "terminal.integrated.fontFamily": "\"MonoLisa Nerd Font Mono\"",
-    "editor.fontLigatures": "'calt' on, 'liga' on, 'ss04' on, 'zero' on, 'ss01' on, 'ss02' on, 'ss18' on, 'ss05' off, 'ss07' on, 'ss08' on, 'ss10' on, 'ss11' on, 'ss12' on, 'ss13' on, 'ss14' on, 'ss15' on, 'ss16' on, 'ss17' on, 'case' on",
-    "editor.wordWrap": "on",
-    "emmet.includeLanguages": {
-        "nunjucks": "html"
+  // required for not crashing on Wayland, and better aesthetics in general
+  "window.titleBarStyle": "custom",
+  "telemetry.telemetryLevel": "off",
+  "gitlens.telemetry.enabled": false,
+  // needed with Redhat extensions -- YAML, Ansible
+  "redhat.telemetry.enabled": false,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 1.8,
+  // in-built bracket colorization
+  "editor.fontFamily": "'MonoLisa Nerd Font', sans-serif",
+  "terminal.integrated.fontFamily": "\"MonoLisa Nerd Font Mono\"",
+  "editor.fontLigatures": "'calt' on, 'liga' on, 'zero' on, 'ss01' on, 'ss02' on, 'ss05' off, 'ss04' on, 'ss07' on, 'ss08' on, 'ss10' on, 'ss11' on, 'ss12' on, 'ss13' on, 'ss14' on, 'ss15' on, 'ss16' on, 'ss17' on, 'ss18' on, 'case' on",
+  "editor.wordWrap": "on",
+  "emmet.includeLanguages": {
+    "nunjucks": "html",
+  },
+  "explorer.confirmDelete": true,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "github.gitAuthentication": false,
+  "editor.accessibilitySupport": "off",
+  "go.toolsManagement.autoUpdate": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.scale": 2,
+  "editor.minimap.autohide": "mouseover",
+  "window.commandCenter": true,
+  "liveshare.guestApprovalRequired": true,
+  "window.menuBarVisibility": "compact",
+  "material-icon-theme.saturation": 0.9,
+  "svelte.enable-ts-plugin": true,
+  "window.density.editorTabHeight": "compact",
+  "update.showReleaseNotes": false,
+  "cmake.showOptionsMovedNotification": false,
+  // "workbench.sideBar.location": "right",
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook",
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.semanticHighlighting.enabled": true,
+  "terminal.integrated.minimumContrastRatio": 1,
+  "gopls": {
+    "ui.semanticTokens": true,
+  },
+  "catppuccin.accentColor": "green",
+  "catppuccin.italicKeywords": false,
+  "catppuccin.boldKeywords": false,
+  "catppuccin.workbenchMode": "minimal",
+  "workbench.tree.indent": 15,
+  "explorer.compactFolders": false,
+  "editor.fontWeight": "500",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "window.restoreWindows": "none",
+  "gruvbox-material-icons.folders.theme": "colorful",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+  },
+  "python.analysis.typeCheckingMode": "standard",
+  "editor.formatOnSave": true,
+  "git.suggestSmartCommit": false,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true,
     },
-    "explorer.confirmDelete": true,
-    "files.trimTrailingWhitespace": true,
-    "files.trimFinalNewlines": true,
-    "github.gitAuthentication": false,
-    "editor.accessibilitySupport": "off",
-    "go.toolsManagement.autoUpdate": true,
-    "editor.minimap.renderCharacters": false,
-    "editor.minimap.scale": 2,
-    "editor.minimap.autohide": true,
-    "window.commandCenter": true,
-    "liveshare.guestApprovalRequired": true,
-    "window.menuBarVisibility": "compact",
-    "material-icon-theme.saturation": 0.9,
-    "svelte.enable-ts-plugin": true,
-    "window.density.editorTabHeight": "compact",
-    "update.showReleaseNotes": false,
-    "cmake.showOptionsMovedNotification": false,
-    // "workbench.sideBar.location": "right",
-    "workbench.editorAssociations": {
-        "*.pdf": "latex-workshop-pdf-hook"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[liquid]": {
-        "editor.defaultFormatter": "sissel.shopify-liquid"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[scss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-    },
-    "workbench.iconTheme": "catppuccin-mocha",
-    "editor.semanticHighlighting.enabled": true,
-    "terminal.integrated.minimumContrastRatio": 1,
-    "gopls": {
-        "ui.semanticTokens": true
-    },
-    "catppuccin.accentColor": "sapphire",
-    "catppuccin.italicKeywords": false,
-    "catppuccin.boldKeywords": false,
-    "catppuccin.workbenchMode": "minimal",
-    "workbench.tree.indent": 15,
-    "explorer.compactFolders": false,
-    "workbench.colorTheme": "Rosé Pine",
-    "editor.fontWeight": "500",
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "window.restoreWindows": "none"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+  },
+  "latex-workshop.formatting.latex": "tex-fmt",
+  "latex-workshop.latex.outDir": "%DIR%/build",
+  "docker.extension.enableComposeLanguageServer": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "[java]": {
+    "editor.defaultFormatter": "Oracle.oracle-java",
+  },
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.runInTerminal": true,
 }
