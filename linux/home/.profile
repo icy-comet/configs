@@ -44,3 +44,16 @@ if [ ! -z "$XCURSOR_PATH" ]; then
 fi
 export XCURSOR_PATH="$XCURSOR_PATH$HOME/.local/share/icons"
 export XCURSOR_PATH="$XCURSOR_PATH:$HOME/.icons"
+
+export PNPM_HOME="$HOME/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PATH:$PNPM_HOME" ;;
+esac
+
+# fnm
+FNM_PATH="$HOME/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$PATH:$HOME/.local/share/fnm"
+  eval "`fnm env`"
+fi
