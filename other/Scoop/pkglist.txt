@@ -12,6 +12,7 @@ ffmpeg
 fnm
 fzf
 gawk
+ghostscript
 git-filter-repo
 go
 grep
@@ -19,7 +20,6 @@ hugo-extended
 imagemagick
 innoextract
 innounp
-kubo
 less
 lsd
 make
@@ -27,13 +27,17 @@ micro
 neovim
 nmap
 oh-my-posh
+openssl
 pandoc
 perl
 ripgrep
 scrcpy
 starship
 syncthing
+tex-fmt
+uv
 vim
 vimtutor
 which
 winfetch
+zip
